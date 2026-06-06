@@ -12,7 +12,7 @@
   --white:#ffffff;--off:#F5F5F3;--border:#E2E2DE;
   --text:#111111;--mid:#444444;--muted:#6B6B6B;--navy:#0D1B2A;
 }
-body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:var(--text);min-height:100vh}
+body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:var(--text);min-height:100vh;font-size:11px}
 
 /* HEADER */
 .hdr{background:var(--blk);padding:0 36px;height:54px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:200;border-bottom:1px solid #222}
@@ -23,7 +23,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 
 /* TAB NAV */
 .tab-nav{background:#fff;border-bottom:1.5px solid var(--border);display:flex;padding:0 28px;position:sticky;top:54px;z-index:190;overflow-x:auto;gap:0}
-.tab-btn{padding:12px 18px;font-size:10.5px;font-weight:600;cursor:pointer;border:none;background:none;font-family:inherit;color:var(--muted);border-bottom:2.5px solid transparent;margin-bottom:-1.5px;transition:all .15s;white-space:nowrap;letter-spacing:.01em}
+.tab-btn{padding:13px 18px;font-size:11.5px;font-weight:600;cursor:pointer;border:none;background:none;font-family:inherit;color:var(--muted);border-bottom:2.5px solid transparent;margin-bottom:-1.5px;transition:all .15s;white-space:nowrap;letter-spacing:.01em}
 .tab-btn:hover{color:var(--text)}
 .tab-btn.active{font-weight:700;border-bottom-color:var(--blk);color:var(--blk)}
 .tab-panel{display:none}
@@ -37,7 +37,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 
 /* PAGE */
 .page{max-width:1100px;margin:0 auto;padding:32px 28px}
-.slbl{font-size:7.5px;font-weight:800;text-transform:uppercase;letter-spacing:.2em;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:12px}
+.slbl{font-size:8.5px;font-weight:800;text-transform:uppercase;letter-spacing:.2em;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:12px}
 .slbl::after{content:"";flex:1;height:1px;background:var(--border)}
 
 /* ORG CHART */
@@ -50,8 +50,8 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 .oc.ceo{background:var(--blk);border-color:#333;color:#fff;min-width:280px}
 .oc.dr{background:var(--white);border-color:var(--border);color:var(--text);min-width:145px}
 .oc-tag{font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;margin-bottom:3px}
-.oc-name{font-size:13px;font-weight:800;margin-bottom:1px;line-height:1.2}
-.oc-title{font-size:8px;line-height:1.35;margin-bottom:5px}
+.oc-name{font-size:14px;font-weight:800;margin-bottom:1px;line-height:1.2}
+.oc-title{font-size:9px;line-height:1.4;margin-bottom:5px}
 .oc-rep{font-size:7.5px;padding-top:5px;border-top:1px solid rgba(0,0,0,.08)}
 .oc.ceo .oc-rep{border-top-color:rgba(255,255,255,.12);color:rgba(255,255,255,.55)}
 
@@ -61,12 +61,12 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 .tcard:hover{border-color:#999;box-shadow:0 4px 16px rgba(0,0,0,.07);transform:translateY(-1px)}
 .tcard-accent{height:3px}
 .tcard-body{padding:11px 13px}
-.tcard-tag{font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:3px}
-.tcard-name{font-size:12.5px;font-weight:800;color:var(--text);margin-bottom:1px;line-height:1.2}
-.tcard-title{font-size:8px;color:var(--mid);line-height:1.4;margin-bottom:6px}
+.tcard-tag{font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:3px}
+.tcard-name{font-size:13.5px;font-weight:800;color:var(--text);margin-bottom:1px;line-height:1.2}
+.tcard-title{font-size:9px;color:var(--mid);line-height:1.4;margin-bottom:6px}
 .chip-row{display:flex;flex-wrap:wrap;gap:3px;margin:5px 0}
 .chip{font-size:7px;font-weight:700;padding:1px 6px;border-radius:99px}
-.tcard-reports{font-size:8px;color:var(--muted);padding-top:6px;border-top:1px solid var(--border)}
+.tcard-reports{font-size:9px;color:var(--muted);padding-top:6px;border-top:1px solid var(--border)}
 .tcard-foot{padding:7px 13px;background:var(--off);font-size:8px;font-weight:600;color:var(--muted);display:flex;align-items:center;justify-content:space-between}
 .open-lbl{color:var(--blk);font-weight:700}
 .tcard.tbc-card{border-style:dashed}
@@ -102,8 +102,8 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 .fn-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:8px;margin-bottom:24px}
 .fn{background:var(--off);border:1px solid var(--border);border-top:2.5px solid var(--blk);border-radius:8px;padding:12px 10px;text-align:center}
 .fn-ico{font-size:16px;margin-bottom:4px}
-.fn-n{font-size:9px;font-weight:800;color:var(--text);margin-bottom:2px}
-.fn-d{font-size:7.5px;color:var(--muted);line-height:1.4}
+.fn-n{font-size:10px;font-weight:800;color:var(--text);margin-bottom:2px}
+.fn-d{font-size:9px;color:var(--muted);line-height:1.4}
 .fn.new{border-top-color:var(--gold)}
 
 /* TBD card */
@@ -127,13 +127,13 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 .ms{background:var(--white);border-radius:8px;border:1px solid var(--border);padding:13px 15px;margin-bottom:10px}
 .ms-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .ms-title{font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:8px}
-.ms-body{font-size:10px;color:var(--text);line-height:1.65;background:var(--off);border-left:3px solid;padding:8px 12px;border-radius:0 5px 5px 0}
-.ms-item{font-size:9.5px;color:var(--text);line-height:1.5;display:flex;gap:7px;padding:4px 0;border-bottom:1px solid #f0f0f0}
+.ms-body{font-size:11px;color:var(--text);line-height:1.65;background:var(--off);border-left:3px solid;padding:8px 12px;border-radius:0 5px 5px 0}
+.ms-item{font-size:10.5px;color:var(--text);line-height:1.5;display:flex;gap:7px;padding:4px 0;border-bottom:1px solid #f0f0f0}
 .ms-item:last-child{border-bottom:none}
 .ms-bul{font-weight:700;flex-shrink:0}
 .krow{background:var(--off);border:1px solid var(--border);border-radius:5px;padding:6px 10px;margin-bottom:5px}
 .krow:last-child{margin-bottom:0}
-.k-metric{font-size:9.5px;font-weight:700;color:var(--text);margin-bottom:1px}
+.k-metric{font-size:10.5px;font-weight:700;color:var(--text);margin-bottom:1px}
 .k-target{font-size:8px;color:var(--mid)}
 .rep-to{background:#F0FFF4;border:1px solid #86EFAC;border-radius:5px;padding:7px 11px;font-size:10px;font-weight:600;color:#14532D;margin-bottom:8px}
 .rep-chips{display:flex;flex-wrap:wrap;gap:5px}
@@ -142,6 +142,9 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 /* Footer */
 .footer{background:var(--blk);padding:14px 36px;display:flex;justify-content:space-between;border-top:1px solid #222;margin-top:40px}
 .ft{font-size:8.5px;color:#555}
+.jd-row{border-bottom:1px solid var(--border)}
+.jd-row:last-child{border-bottom:none}
+.jd-row:hover{background:var(--off)}
 </style>
 </head>
 <body>
@@ -160,11 +163,12 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
   <button class="tab-btn" onclick="switchTab('usa',this)">USA</button>
   <button class="tab-btn" onclick="switchTab('australia',this)">Australia</button>
   <button class="tab-btn" onclick="switchTab('middleeast',this)">Middle East</button>
+  <button class="tab-btn" onclick="switchTab('jobs',this)">Job &amp; Role Descriptions</button>
 </div>
 
 <!-- ════ OVERVIEW ══════════════════════════════════════════════════ -->
 <div id="panel-overview" class="tab-panel active">
-  <div class="banner" style="background:var(--navy)">
+  <div class="banner" style="background:var(--blk)">
     <div class="banner-kicker" style="color:var(--gold)">ORN Commercial Division · Ring-Fenced Structure · 2026</div>
     <div class="banner-h" style="color:#fff">Five regions. One commercial vision.</div>
     <div class="banner-body" style="color:#8a9ab0">UK · Europe · USA · Australia · Middle East — under one commercial leadership team, each region running its own operations and finance. Product contracting is global. People and commercial leadership are centralised. Cruise division operating through UK.</div>
@@ -173,10 +177,22 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 
     <!-- RAJ at top -->
     <div class="slbl">Chief Executive</div>
-    <div style="display:flex;justify-content:center;margin-bottom:0">
-      <div class="oc ceo" style="min-width:320px">
-        <div class="oc-tag" style="color:var(--gold2)">Global CRO &amp; CEO — UK, Europe, USA</div>
-        <div class="oc-name">Raj Kumar</div>
+    <div style="display:flex;justify-content:center;gap:10px;margin-bottom:0">
+      <!-- Global COO role -->
+      <div class="oc ceo" style="min-width:240px">
+        <div class="oc-tag" style="color:rgba(255,255,255,.45);font-size:8px;letter-spacing:.14em">ROLE 1</div>
+        <div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--gold2);margin-bottom:4px">Global COO</div>
+        <div class="oc-name" style="font-size:16px">Raj Kumar</div>
+        <div class="oc-title" style="color:#9aa8b5">Chief Operating Officer · All Regions</div>
+        <div class="oc-rep">Reports to: TBC</div>
+      </div>
+      <!-- Divider -->
+      <div style="width:1px;background:rgba(255,255,255,.15);align-self:stretch;margin:8px 0"></div>
+      <!-- CEO UK/Europe/USA role -->
+      <div class="oc ceo" style="min-width:240px;border-color:rgba(201,168,76,.4)">
+        <div class="oc-tag" style="color:rgba(255,255,255,.45);font-size:8px;letter-spacing:.14em">ROLE 2</div>
+        <div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--gold2);margin-bottom:4px">CEO — UK, Europe &amp; USA</div>
+        <div class="oc-name" style="font-size:16px">Raj Kumar</div>
         <div class="oc-title" style="color:#9aa8b5">Commercial Division · 17 Hanover Square, London</div>
         <div class="oc-rep">Reports to: TBC</div>
       </div>
@@ -196,151 +212,185 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
       <div class="oc dr" style="border-top:2.5px solid #666;opacity:.7"><div class="oc-tag" style="color:var(--muted)">UK CFO · Recruiting</div><div class="oc-name" style="color:var(--muted)">TBD</div><div class="oc-title" style="color:var(--mid)">UK-based · European finance coord.</div><div class="oc-rep" style="color:var(--muted)">↑ Raj Kumar</div></div>
     </div>
 
-    <!-- Centralised roles -->
-    <div class="slbl">Centralised Functions &amp; Structure</div>
+    <!-- Centralised Functions Section -->
+    <div class="slbl" style="margin-top:28px">Centralised Functions, Finance &amp; Structure</div>
 
-    <!-- Row 1: Centralised roles + Finance -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
+    <!-- Row 1: Centralised Roles | Finance | Skyjet -->
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:10px">
 
-      <!-- Globally Centralised Roles -->
-      <div style="background:var(--blk);border-radius:10px;padding:18px 20px;border:1px solid #222">
+      <!-- Box 1: Globally Centralised Roles -->
+      <div style="background:var(--blk);border-radius:10px;padding:18px 20px;border:1px solid #222;display:flex;flex-direction:column">
         <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);margin-bottom:10px">Globally Centralised Roles</div>
-        <div style="font-size:9.5px;color:#aaa;line-height:1.6;margin-bottom:12px">Three roles sit centrally across all five regions. All other operational functions are managed locally within each region.</div>
-        <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="font-size:9.5px;color:#aaa;line-height:1.6;margin-bottom:12px">Three roles sit centrally across all five regions. All other operational functions are managed locally within each region and report to their regional CEO.</div>
+        <div style="display:flex;flex-direction:column;gap:8px;flex:1">
           <div style="background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.25);border-radius:8px;padding:10px 12px">
             <div style="font-size:10px;font-weight:800;color:#fff;margin-bottom:2px">Raj Kumar</div>
-            <div style="font-size:8.5px;color:var(--gold2)">Global CRO &amp; CEO — UK, Europe, USA</div>
-            <div style="font-size:8px;color:#888;margin-top:4px;line-height:1.5">P&amp;L ownership across all regions · Sets commercial strategy · DMC partnership model · Senior leadership team · Board reporting</div>
+            <div style="font-size:8.5px;color:var(--gold2)">Global COO &amp; CEO — UK, Europe, USA</div>
+            <div style="font-size:8px;color:#888;margin-top:4px;line-height:1.5">P&amp;L ownership across all regions · Sets commercial strategy · DMC partnership model · Board reporting · Senior leadership team</div>
           </div>
           <div style="background:rgba(21,128,61,.1);border:1px solid rgba(21,128,61,.25);border-radius:8px;padding:10px 12px">
             <div style="font-size:10px;font-weight:800;color:#fff;margin-bottom:2px">Alia Taub</div>
-            <div style="font-size:8.5px;color:#4ade80">Global CPO — People, Training &amp; Business Development</div>
-            <div style="font-size:8px;color:#888;margin-top:4px;line-height:1.5">HR policy across all regions · Leadership development · Skyjet transition · ORN Travel Academy · Homeworkers programme · Training calendar</div>
+            <div style="font-size:8.5px;color:#4ade80">Global CPO — People, Training &amp; BD</div>
+            <div style="font-size:8px;color:#888;margin-top:4px;line-height:1.5">HR policy all regions · Leadership development · Skyjet transition · ORN Travel Academy · Homeworkers programme · Training calendar</div>
           </div>
           <div style="background:rgba(30,64,175,.1);border:1px solid rgba(30,64,175,.25);border-radius:8px;padding:10px 12px">
             <div style="font-size:10px;font-weight:800;color:#fff;margin-bottom:2px">Commercial Product</div>
             <div style="font-size:8.5px;color:#60a5fa">Global Product Contracting — UK-led</div>
-            <div style="font-size:8px;color:#888;margin-top:4px;line-height:1.5">Hotel, transport and experience contracting is global. Rate structures, allotments and DMC agreements negotiated centrally from London and applied across all regions.</div>
+            <div style="font-size:8px;color:#888;margin-top:4px;line-height:1.5">Hotel, transport and experience contracting negotiated centrally from London and applied across all five regions. Rate structures, allotments and DMC agreements are global.</div>
+          </div>
+          <div style="background:rgba(100,100,100,.15);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:10px 12px;margin-top:auto">
+            <div style="font-size:9px;color:#888;line-height:1.5">All other functions — Sales, Operations, Customer Service, Marketing, Finance — are managed locally within each region.</div>
           </div>
         </div>
       </div>
 
-      <!-- Finance Structure -->
-      <div style="background:#fff;border-radius:10px;padding:18px 20px;border:1.5px solid var(--border)">
-        <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin-bottom:10px">Finance Structure</div>
-        <div style="font-size:9.5px;color:var(--mid);line-height:1.6;margin-bottom:12px">Each region manages its own local finance and reports monthly. European finance is centralised in the UK. A UK-based CFO is being recruited to coordinate consolidated group numbers.</div>
-        <div style="display:flex;flex-direction:column;gap:7px">
-          <div style="background:var(--off);border-radius:7px;padding:9px 12px;border-left:3px solid var(--blk)">
-            <div style="font-size:9.5px;font-weight:800;color:var(--text);margin-bottom:2px">🇬🇧 UK &amp; Europe</div>
-            <div style="font-size:8.5px;color:var(--mid)">Finance centralised in UK. UK CFO (recruiting) coordinates European monthly numbers including Turkey and Transport regions.</div>
+      <!-- Box 2: Finance Structure -->
+      <div style="background:#fff;border-radius:10px;padding:18px 20px;border:1.5px solid var(--border);display:flex;flex-direction:column">
+        <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin-bottom:6px">Finance Structure</div>
+        <div style="font-size:9.5px;color:var(--mid);line-height:1.65;margin-bottom:12px">Each region manages its own local finance and reports monthly. European finance is centralised in the UK. UK CFO being recruited to coordinate consolidated group numbers from all five regions.</div>
+        <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+          <div style="background:var(--off);border-radius:7px;padding:10px 12px;border-left:3px solid var(--blk)">
+            <div style="font-size:10px;font-weight:800;color:var(--text);margin-bottom:3px">🇬🇧 UK &amp; Europe</div>
+            <div style="font-size:8.5px;color:var(--mid);line-height:1.5">Finance centralised in UK. UK CFO (recruiting) coordinates European monthly numbers including Turkey and Transport regions.</div>
           </div>
-          <div style="background:var(--off);border-radius:7px;padding:9px 12px;border-left:3px solid #B45309">
-            <div style="font-size:9.5px;font-weight:800;color:var(--text);margin-bottom:2px">🇺🇸 USA</div>
-            <div style="font-size:8.5px;color:var(--mid)">Independent finance. Kirk Demeter P&amp;L. Monthly reports to UK CFO. Whitney Palmer (Finance Manager) on the ground.</div>
+          <div style="background:var(--off);border-radius:7px;padding:10px 12px;border-left:3px solid #B45309">
+            <div style="font-size:10px;font-weight:800;color:var(--text);margin-bottom:3px">🇺🇸 USA</div>
+            <div style="font-size:8.5px;color:var(--mid);line-height:1.5">Independent finance. Kirk Demeter P&amp;L ownership. Monthly reports to UK CFO. Whitney Palmer (Finance Manager) on the ground with Martin (CPA).</div>
           </div>
-          <div style="background:var(--off);border-radius:7px;padding:9px 12px;border-left:3px solid #0891B2">
-            <div style="font-size:9.5px;font-weight:800;color:var(--text);margin-bottom:2px">🇦🇺 Australia</div>
-            <div style="font-size:8.5px;color:var(--mid)">Independent finance. Sahil Nijhawan P&amp;L. Monthly reports to UK CFO. Dhruv Soni / Amey Ghadigaonkar on the ground.</div>
+          <div style="background:var(--off);border-radius:7px;padding:10px 12px;border-left:3px solid #0891B2">
+            <div style="font-size:10px;font-weight:800;color:var(--text);margin-bottom:3px">🇦🇺 Australia</div>
+            <div style="font-size:8.5px;color:var(--mid);line-height:1.5">Independent finance. Sahil Nijhawan P&amp;L ownership. Monthly reports to UK CFO. Dhruv Soni and Amey Ghadigaonkar on the ground.</div>
           </div>
-          <div style="background:var(--off);border-radius:7px;padding:9px 12px;border-left:3px solid #D97706">
-            <div style="font-size:9.5px;font-weight:800;color:var(--text);margin-bottom:2px">🌙 Middle East</div>
-            <div style="font-size:8.5px;color:var(--mid)">Finance TBC — independent once CEO confirmed. Will report monthly to UK CFO on same cycle as other regions.</div>
+          <div style="background:var(--off);border-radius:7px;padding:10px 12px;border-left:3px solid #D97706">
+            <div style="font-size:10px;font-weight:800;color:var(--text);margin-bottom:3px">🌙 Middle East</div>
+            <div style="font-size:8.5px;color:var(--mid);line-height:1.5">Finance TBC — will be independent once CEO confirmed. Will report monthly to UK CFO on the same cycle as all other regions.</div>
           </div>
+          <div style="background:#F0FFF4;border-radius:7px;padding:9px 12px;border:1px solid #86EFAC;margin-top:auto">
+            <div style="font-size:9px;font-weight:700;color:#065F46;margin-bottom:2px">UK CFO — Recruiting Now</div>
+            <div style="font-size:8.5px;color:#14532D;line-height:1.5">A UK-based CFO is being recruited to consolidate monthly numbers from all five regions and produce group management accounts for Raj Kumar.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 3: Skyjet → Cruise -->
+      <div style="background:#fff;border-radius:10px;padding:18px 20px;border:1.5px solid var(--border);border-top:3px solid var(--gold);display:flex;flex-direction:column">
+        <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin-bottom:3px">Strategic Acquisition &amp; Transition</div>
+        <div style="font-size:14px;font-weight:800;color:var(--blk);margin-bottom:6px">✈️ Skyjet → Cruise Operation</div>
+        <div style="font-size:9.5px;color:var(--mid);line-height:1.6;margin-bottom:10px">Skyjet is being acquired and transitioned into a dedicated ORN Cruise Operation. Programme led by Alia Taub (Global CPO). All cruise bookings managed through the UK office.</div>
+        <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:10px">
+          <div style="background:var(--off);border-radius:7px;padding:9px 12px;border-left:3px solid var(--gold)">
+            <div style="font-size:9.5px;font-weight:800;color:var(--text);margin-bottom:2px">Phase 1 — Acquisition &amp; Integration</div>
+            <div style="font-size:8.5px;color:var(--mid);line-height:1.5">Align Skyjet with ORN commercial standards, booking policies and operational processes. Brand transition from Skyjet to ORN Cruise.</div>
+          </div>
+          <div style="background:var(--off);border-radius:7px;padding:9px 12px;border-left:3px solid #1A73E8">
+            <div style="font-size:9.5px;font-weight:800;color:var(--text);margin-bottom:2px">Phase 2 — Cruise Product Build</div>
+            <div style="font-size:8.5px;color:var(--mid);line-height:1.5">Cruise line contracting (global), shore excursions, port transfers. David Tan coordinates logistics. Bookings handled through UK.</div>
+          </div>
+          <div style="background:var(--off);border-radius:7px;padding:9px 12px;border-left:3px solid #065F46">
+            <div style="font-size:9.5px;font-weight:800;color:var(--text);margin-bottom:2px">Phase 3 — Market Launch &amp; Growth</div>
+            <div style="font-size:8.5px;color:var(--mid);line-height:1.5">Full cruise division operational. Group tours, cruise packages, centralised DMC Europe — strategy session TBD. Cruise sales through TAG B2B network.</div>
+          </div>
+        </div>
+        <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:6px">Cruise Functions</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:10px;flex:1">
+          <div style="background:var(--off);border-radius:5px;padding:7px 9px"><div style="font-size:9px;font-weight:700">🎟️ Reservations</div><div style="color:var(--muted);font-size:8px;margin-top:2px">All bookings → UK · Skyjet/ORN system</div></div>
+          <div style="background:var(--off);border-radius:5px;padding:7px 9px"><div style="font-size:9px;font-weight:700">🚢 Product</div><div style="color:var(--muted);font-size:8px;margin-top:2px">Global contracting · Cruise lines · Ports</div></div>
+          <div style="background:var(--off);border-radius:5px;padding:7px 9px"><div style="font-size:9px;font-weight:700">🚌 Transfers</div><div style="color:var(--muted);font-size:8px;margin-top:2px">David Tan · Adonis fleet · Port logistics</div></div>
+          <div style="background:var(--off);border-radius:5px;padding:7px 9px"><div style="font-size:9px;font-weight:700">📈 Sales</div><div style="color:var(--muted);font-size:8px;margin-top:2px">TAG B2B network · Agent distribution</div></div>
+          <div style="background:var(--off);border-radius:5px;padding:7px 9px"><div style="font-size:9px;font-weight:700">🎓 Training</div><div style="color:var(--muted);font-size:8px;margin-top:2px">Alia Taub · Staff transition programme</div></div>
+          <div style="background:var(--off);border-radius:5px;padding:7px 9px"><div style="font-size:9px;font-weight:700">💰 Finance</div><div style="color:var(--muted);font-size:8px;margin-top:2px">UK-based · UK CFO oversight</div></div>
+        </div>
+        <div style="background:#FEF3C7;border:1px solid #FCD34D;border-radius:6px;padding:8px 11px;font-size:8.5px;color:#78350F;margin-top:auto">
+          <strong>Programme Owner:</strong> Alia Taub (Global CPO) · Reports monthly to Raj Kumar
         </div>
       </div>
 
     </div>
 
-    <!-- Row 2: Cruise + DMC Strategy -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
+    <!-- Row 2: DMC Strategy | Open Items | Sales Data -->
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:24px">
 
-      <!-- Cruise Division -->
-      <div style="background:#fff;border-radius:10px;padding:18px 20px;border:1.5px solid var(--border);border-top:3px solid var(--gold)">
-        <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin-bottom:3px">New Division</div>
-        <div style="font-size:14px;font-weight:800;color:var(--blk);margin-bottom:8px">🚢 Cruise Division</div>
-        <div style="font-size:9.5px;color:var(--mid);line-height:1.6;margin-bottom:12px">A dedicated cruise division has been established within the commercial structure. All cruise bookings are handled directly through the UK office. Product contracting for cruise is global.</div>
-        <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:12px">
-          <div style="display:flex;gap:8px;font-size:9px;color:var(--text);align-items:flex-start"><span style="color:var(--gold);font-weight:700;flex-shrink:0">▸</span><span><strong>UK-led bookings:</strong> All cruise reservations and confirmations managed from 17 Hanover Square</span></div>
-          <div style="display:flex;gap:8px;font-size:9px;color:var(--text);align-items:flex-start"><span style="color:var(--gold);font-weight:700;flex-shrink:0">▸</span><span><strong>Global contracting:</strong> Cruise product sourced and contracted globally — cruise lines, ports and shore excursions</span></div>
-          <div style="display:flex;gap:8px;font-size:9px;color:var(--text);align-items:flex-start"><span style="color:var(--gold);font-weight:700;flex-shrink:0">▸</span><span><strong>David Tan:</strong> Air &amp; Transport lead coordinating cruise port transfers and logistics</span></div>
-          <div style="display:flex;gap:8px;font-size:9px;color:var(--text);align-items:flex-start"><span style="color:var(--gold);font-weight:700;flex-shrink:0">▸</span><span><strong>Strategy session TBD:</strong> Group tours, cruise packages or centralised DMC Europe to be aligned</span></div>
-        </div>
-        <div style="display:flex;flex-wrap:wrap;gap:5px">
-          <span style="font-size:8px;font-weight:700;padding:2px 9px;border-radius:99px;background:#FFFBEB;border:1px solid #FDE68A;color:#92400E">Bookings → UK</span>
-          <span style="font-size:8px;font-weight:700;padding:2px 9px;border-radius:99px;background:#FFFBEB;border:1px solid #FDE68A;color:#92400E">Product → Global</span>
-          <span style="font-size:8px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F5F5F3;border:1px solid var(--border);color:var(--muted)">Strategy TBD</span>
-        </div>
-      </div>
-
-      <!-- DMC Strategy -->
-      <div style="background:#fff;border-radius:10px;padding:18px 20px;border:1.5px solid var(--border)">
+      <!-- Box 4: DMC Strategy -->
+      <div style="background:#fff;border-radius:10px;padding:18px 20px;border:1.5px solid var(--border);display:flex;flex-direction:column">
         <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin-bottom:3px">Partnership Model</div>
         <div style="font-size:14px;font-weight:800;color:var(--blk);margin-bottom:8px">🤝 DMC Strategy</div>
-        <div style="font-size:9.5px;color:var(--mid);line-height:1.6;margin-bottom:12px">We only partner with DMCs that add genuine, measurable value to our global product strategy. Everything else is outsourced. This keeps our network lean, high-quality and commercially aligned.</div>
-        <div style="display:flex;flex-direction:column;gap:5px;margin-bottom:12px">
-          <div style="background:var(--off);border-radius:6px;padding:7px 10px;display:flex;justify-content:space-between;align-items:center"><div style="font-size:9px;font-weight:700;color:var(--text)">Nexus DMC — ANZ</div><span style="font-size:7.5px;font-weight:700;padding:1px 8px;border-radius:99px;background:#D1FAE5;color:#065F46;border:1px solid #6EE7B7">Active</span></div>
-          <div style="background:var(--off);border-radius:6px;padding:7px 10px;display:flex;justify-content:space-between;align-items:center"><div style="font-size:9px;font-weight:700;color:var(--text)">Europe Incoming (Eileen Corrales)</div><span style="font-size:7.5px;font-weight:700;padding:1px 8px;border-radius:99px;background:#D1FAE5;color:#065F46;border:1px solid #6EE7B7">Active</span></div>
-          <div style="background:var(--off);border-radius:6px;padding:7px 10px;display:flex;justify-content:space-between;align-items:center"><div style="font-size:9px;font-weight:700;color:var(--text)">TAG — Travel Answers Group</div><span style="font-size:7.5px;font-weight:700;padding:1px 8px;border-radius:99px;background:#D1FAE5;color:#065F46;border:1px solid #6EE7B7">Active</span></div>
-          <div style="background:var(--off);border-radius:6px;padding:7px 10px;display:flex;justify-content:space-between;align-items:center"><div style="font-size:9px;font-weight:700;color:var(--text)">Baris Intepe — Turkey &amp; ME Gateway</div><span style="font-size:7.5px;font-weight:700;padding:1px 8px;border-radius:99px;background:#D1FAE5;color:#065F46;border:1px solid #6EE7B7">Active</span></div>
-          <div style="background:var(--off);border-radius:6px;padding:7px 10px;display:flex;justify-content:space-between;align-items:center"><div style="font-size:9px;font-weight:700;color:var(--text)">ORN Transport — Adonis Iliopoulos</div><span style="font-size:7.5px;font-weight:700;padding:1px 8px;border-radius:99px;background:#D1FAE5;color:#065F46;border:1px solid #6EE7B7">Active</span></div>
-          <div style="background:var(--off);border-radius:6px;padding:7px 10px;display:flex;justify-content:space-between;align-items:center"><div style="font-size:9px;font-weight:700;color:#888">All other DMCs</div><span style="font-size:7.5px;font-weight:700;padding:1px 8px;border-radius:99px;background:#F4F5F7;color:#6B6B6B;border:1px solid #E2E2DE">Outsourced</span></div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Row 3: Open Items + Sales Strategy -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px">
-
-      <div style="border:2px dashed #D97706;border-radius:10px;padding:16px 18px;background:#FFFBEB">
-        <div style="font-size:11px;font-weight:800;color:#92400E;margin-bottom:10px">⚠️ Open Action Items</div>
-        <div style="display:flex;flex-direction:column;gap:7px">
-          <div style="background:#fff;border-radius:6px;padding:8px 11px;border-left:3px solid #D97706">
-            <div style="font-size:9px;font-weight:700;color:#92400E;margin-bottom:2px">Middle East CEO — Recruiting</div>
-            <div style="font-size:8.5px;color:#78350F;line-height:1.5">Leadership TBC. Baris Intepe acting as Turkey/ME gateway. CEO will report to Raj Kumar at same level as Ajay and Alia.</div>
-          </div>
-          <div style="background:#fff;border-radius:6px;padding:8px 11px;border-left:3px solid #1E40AF">
-            <div style="font-size:9px;font-weight:700;color:#1E3A8A;margin-bottom:2px">UK CFO — Recruiting Now</div>
-            <div style="font-size:8.5px;color:#78350F;line-height:1.5">UK-based CFO required to coordinate monthly consolidated numbers from UK, Europe, Turkey, Transport and all regions. Reports to Raj Kumar.</div>
-          </div>
-          <div style="background:#fff;border-radius:6px;padding:8px 11px;border-left:3px solid var(--gold)">
-            <div style="font-size:9px;font-weight:700;color:#92400E;margin-bottom:2px">Sales Strategy — Session Required</div>
-            <div style="font-size:8.5px;color:#78350F;line-height:1.5">Dedicated alignment session needed: group tours vs cruise packages vs centralised DMC Europe. Sales data reporting system (30-day extraction limit) also to be addressed.</div>
-          </div>
-        </div>
-      </div>
-
-      <div style="background:#fff;border-radius:10px;padding:16px 18px;border:1.5px solid var(--border)">
-        <div style="font-size:11px;font-weight:800;color:var(--blk);margin-bottom:10px">📊 Sales Data &amp; Reporting</div>
-        <div style="font-size:9.5px;color:var(--mid);line-height:1.6;margin-bottom:10px">Monthly sales reporting across all regions compiled centrally. Current system constraint: 30-day maximum date range for data extraction.</div>
-        <div style="display:flex;flex-direction:column;gap:6px">
-          <div style="background:var(--off);border-radius:6px;padding:8px 11px">
-            <div style="font-size:9px;font-weight:700;color:var(--text);margin-bottom:2px">Reporting Regions</div>
-            <div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:4px">
-              <span style="font-size:8px;font-weight:700;padding:2px 8px;border-radius:99px;background:var(--blk);color:#fff">UK</span>
-              <span style="font-size:8px;font-weight:700;padding:2px 8px;border-radius:99px;background:var(--blk);color:#fff">Europe</span>
-              <span style="font-size:8px;font-weight:700;padding:2px 8px;border-radius:99px;background:var(--blk);color:#fff">USA</span>
-              <span style="font-size:8px;font-weight:700;padding:2px 8px;border-radius:99px;background:var(--blk);color:#fff">Australia</span>
-              <span style="font-size:8px;font-weight:700;padding:2px 8px;border-radius:99px;background:#D97706;color:#fff">Middle East TBC</span>
+        <div style="font-size:9.5px;color:var(--mid);line-height:1.6;margin-bottom:12px">We partner only with DMCs that add genuine, measurable value to our global product strategy. Everything else is outsourced. This keeps our network lean, high-quality and commercially aligned.</div>
+        <div style="display:flex;flex-direction:column;gap:5px;flex:1">
+          <div style="background:var(--off);border-radius:6px;padding:8px 10px;display:flex;justify-content:space-between;align-items:center"><div style="font-size:10px;font-weight:700;color:var(--text)">Nexus DMC — ANZ</div><span style="font-size:8px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;color:#065F46;border:1px solid #6EE7B7">Active</span></div>
+          <div style="background:var(--off);border-radius:6px;padding:8px 10px;display:flex;justify-content:space-between;align-items:center"><div style="font-size:10px;font-weight:700;color:var(--text)">Europe Incoming (Eileen Corrales)</div><span style="font-size:8px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;color:#065F46;border:1px solid #6EE7B7">Active</span></div>
+          <div style="background:var(--off);border-radius:6px;padding:8px 10px;display:flex;justify-content:space-between;align-items:center"><div style="font-size:10px;font-weight:700;color:var(--text)">TAG — Travel Answers Group</div><span style="font-size:8px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;color:#065F46;border:1px solid #6EE7B7">Active</span></div>
+          <div style="background:var(--off);border-radius:6px;padding:8px 10px;display:flex;justify-content:space-between;align-items:center"><div style="font-size:10px;font-weight:700;color:var(--text)">Baris Intepe — Turkey &amp; ME Gateway</div><span style="font-size:8px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;color:#065F46;border:1px solid #6EE7B7">Active</span></div>
+          <div style="background:var(--off);border-radius:6px;padding:8px 10px;display:flex;justify-content:space-between;align-items:center"><div style="font-size:10px;font-weight:700;color:var(--text)">ORN Transport — Adonis Iliopoulos</div><span style="font-size:8px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;color:#065F46;border:1px solid #6EE7B7">Active</span></div>
+          <div style="background:var(--off);border-radius:6px;padding:8px 10px;display:flex;justify-content:space-between;align-items:center"><div style="font-size:10px;font-weight:700;color:#888">All other DMCs</div><span style="font-size:8px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;color:#6B6B6B;border:1px solid #E2E2DE">Outsourced</span></div>
+          <div style="background:var(--off);border-radius:8px;padding:10px 12px;margin-top:auto;border:1px solid var(--border)">
+            <div style="font-size:9px;font-weight:800;color:var(--text);margin-bottom:4px">Integration Model</div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:8.5px;color:var(--mid)">
+              <span style="font-weight:700;padding:2px 8px;border-radius:99px;background:var(--blk);color:#fff">DMC Relationship</span>
+              <span style="color:#aaa">→</span>
+              <span style="font-weight:700;padding:2px 8px;border-radius:99px;background:#374151;color:#fff">Static Contract</span>
+              <span style="color:#aaa">→</span>
+              <span style="font-weight:700;padding:2px 8px;border-radius:99px;background:#065F46;color:#fff">Direct API</span>
             </div>
           </div>
-          <div style="background:var(--off);border-radius:6px;padding:8px 11px">
-            <div style="font-size:9px;font-weight:700;color:var(--text);margin-bottom:2px">Format</div>
-            <div style="font-size:8.5px;color:var(--mid)">Monthly spreadsheet with Jan · Feb · Mar · May columns. Compiled by region. Delivered to Raj Kumar and UK CFO (once hired).</div>
+        </div>
+      </div>
+
+      <!-- Box 5: Open Action Items -->
+      <div style="border:2px dashed #D97706;border-radius:10px;padding:18px 20px;background:#FFFBEB;display:flex;flex-direction:column">
+        <div style="font-size:12px;font-weight:800;color:#92400E;margin-bottom:12px">⚠️ Open Action Items</div>
+        <div style="display:flex;flex-direction:column;gap:8px;flex:1">
+          <div style="background:#fff;border-radius:8px;padding:11px 13px;border-left:3px solid #D97706">
+            <div style="font-size:10px;font-weight:700;color:#92400E;margin-bottom:3px">Middle East CEO — Recruiting</div>
+            <div style="font-size:8.5px;color:#78350F;line-height:1.55">Leadership TBC. Baris Intepe currently acting as Turkey/ME commercial gateway and building the market intelligence foundation. Incoming CEO will report directly to Raj Kumar at the same level as Ajay and Alia.</div>
           </div>
-          <div style="background:#FEF3C7;border-radius:6px;padding:8px 11px;border:1px solid #FCD34D">
-            <div style="font-size:9px;font-weight:700;color:#92400E;margin-bottom:2px">⚠️ System Limitation</div>
-            <div style="font-size:8.5px;color:#78350F">Current system: 30-day (max 3-month) date range limit for data extraction. Monthly manual compilation required until system is upgraded.</div>
+          <div style="background:#fff;border-radius:8px;padding:11px 13px;border-left:3px solid #1E40AF">
+            <div style="font-size:10px;font-weight:700;color:#1E3A8A;margin-bottom:3px">UK CFO — Recruiting Now</div>
+            <div style="font-size:8.5px;color:#78350F;line-height:1.55">A UK-based CFO is required to coordinate monthly consolidated numbers from UK, Europe, Turkey, Transport and all regions. Will produce group management accounts and report to Raj Kumar. Dhruv Soni currently covering the role.</div>
+          </div>
+          <div style="background:#fff;border-radius:8px;padding:11px 13px;border-left:3px solid var(--gold)">
+            <div style="font-size:10px;font-weight:700;color:#92400E;margin-bottom:3px">Sales Strategy — Session Required</div>
+            <div style="font-size:8.5px;color:#78350F;line-height:1.55">Dedicated alignment session needed: group tours vs cruise packages vs centralised DMC Europe. Sales data reporting system (30-day extraction limit) and monthly reporting format also to be aligned across all regions.</div>
+          </div>
+          <div style="background:#fff;border-radius:8px;padding:11px 13px;border-left:3px solid #15803D;margin-top:auto">
+            <div style="font-size:10px;font-weight:700;color:#14532D;margin-bottom:3px">Role JDs — Alia Taub Action</div>
+            <div style="font-size:8.5px;color:#78350F;line-height:1.55">Full Job Descriptions and competency frameworks for all 54 roles in the Commercial Division to be completed by Alia Taub (Global CPO). See Job &amp; Role Descriptions tab.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 6: Sales Data & Reporting -->
+      <div style="background:#fff;border-radius:10px;padding:18px 20px;border:1.5px solid var(--border);display:flex;flex-direction:column">
+        <div style="font-size:12px;font-weight:800;color:var(--blk);margin-bottom:8px">📊 Sales Data &amp; Reporting</div>
+        <div style="font-size:9.5px;color:var(--mid);line-height:1.65;margin-bottom:12px">Monthly sales reporting across all regions compiled centrally. Current system constraint: 30-day maximum date range for data extraction. Manual monthly compilation required until resolved.</div>
+        <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+          <div style="background:var(--off);border-radius:6px;padding:10px 12px">
+            <div style="font-size:10px;font-weight:700;color:var(--text);margin-bottom:6px">Reporting Regions</div>
+            <div style="display:flex;flex-wrap:wrap;gap:5px">
+              <span style="font-size:9px;font-weight:700;padding:3px 10px;border-radius:99px;background:var(--blk);color:#fff">UK</span>
+              <span style="font-size:9px;font-weight:700;padding:3px 10px;border-radius:99px;background:var(--blk);color:#fff">Europe</span>
+              <span style="font-size:9px;font-weight:700;padding:3px 10px;border-radius:99px;background:var(--blk);color:#fff">USA</span>
+              <span style="font-size:9px;font-weight:700;padding:3px 10px;border-radius:99px;background:var(--blk);color:#fff">Australia</span>
+              <span style="font-size:9px;font-weight:700;padding:3px 10px;border-radius:99px;background:#D97706;color:#fff">Middle East TBC</span>
+            </div>
+          </div>
+          <div style="background:var(--off);border-radius:6px;padding:10px 12px">
+            <div style="font-size:10px;font-weight:700;color:var(--text);margin-bottom:3px">Format</div>
+            <div style="font-size:8.5px;color:var(--mid);line-height:1.55">Monthly spreadsheet with columns: Jan · Feb · Mar · May. Compiled by region and delivered to Raj Kumar and the UK CFO (once hired). Additional months added as the year progresses.</div>
+          </div>
+          <div style="background:var(--off);border-radius:6px;padding:10px 12px">
+            <div style="font-size:10px;font-weight:700;color:var(--text);margin-bottom:3px">Responsibility</div>
+            <div style="font-size:8.5px;color:var(--mid);line-height:1.55">Monthly reports to be compiled for Australia, USA, India (fulfilment data only) and Europe. UK CFO to consolidate once appointed. Currently coordinated by Dhruv Soni.</div>
+          </div>
+          <div style="background:#FEF3C7;border-radius:6px;padding:10px 12px;border:1px solid #FCD34D;margin-top:auto">
+            <div style="font-size:10px;font-weight:700;color:#92400E;margin-bottom:3px">⚠️ System Limitation</div>
+            <div style="font-size:8.5px;color:#78350F;line-height:1.55">Current system has a 30-day (max 3-month) date range limit for data extraction. Monthly manual compilation required until system is upgraded. Action item for technology team.</div>
           </div>
         </div>
       </div>
 
     </div>
 
-    
-  
-</div>
-
+  </div>
 </div>
 
 <div id="panel-uk" class="tab-panel">
@@ -350,7 +400,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:var(--gold);border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global CRO &amp; CEO</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global COO &amp; CEO</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Raj Kumar</div>
         <div style="font-size:8px;color:rgba(255,255,255,.55)">UK · Europe · USA · All Regions</div>
       </div>
@@ -411,7 +461,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:var(--gold);border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global CRO &amp; CEO</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global COO &amp; CEO</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Raj Kumar</div>
         <div style="font-size:8px;color:rgba(255,255,255,.55)">UK · Europe · USA · All Regions</div>
       </div>
@@ -490,7 +540,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:var(--gold);border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global CRO &amp; CEO</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global COO &amp; CEO</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Raj Kumar</div>
         <div style="font-size:8px;color:rgba(255,255,255,.55)">UK · Europe · USA · All Regions</div>
       </div>
@@ -741,7 +791,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:var(--gold);border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global CRO &amp; CEO</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global COO &amp; CEO</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Raj Kumar</div>
         <div style="font-size:8px;color:rgba(255,255,255,.55)">UK · Europe · USA · All Regions</div>
       </div>
@@ -991,7 +1041,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:var(--gold);border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global CRO &amp; CEO</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global COO &amp; CEO</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Raj Kumar</div>
         <div style="font-size:8px;color:rgba(255,255,255,.55)">UK · Europe · USA · All Regions</div>
       </div>
@@ -1043,6 +1093,658 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 
 </div>
 
+
+<!-- ════ JOBS TAB ════════════════════════════════════════════════════ -->
+<div id="panel-jobs" class="tab-panel">
+  <div style="background:var(--navy);padding:26px 36px 22px;border-bottom:1px solid rgba(255,255,255,.06)">
+    <div style="font-size:8px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:6px">ORN Commercial Division · All Regions</div>
+    <div style="font-size:20px;font-weight:800;color:#fff;margin-bottom:5px">Job &amp; Role Descriptions</div>
+    <div style="font-size:10px;color:#8a9ab0;line-height:1.7">All roles across the Commercial Division. Click <strong style="color:#fff">View 360 ↗</strong> for the full job description, KPIs, responsibilities and meetings cadence. Roles showing <em>Awaiting JD</em> are confirmed in the structure — full job descriptions to be completed by Alia Taub (Global CPO).</div>
+  </div>
+  <div style="max-width:1100px;margin:0 auto;padding:28px 32px">
+    <div style="background:#fff;border-radius:10px;border:1.5px solid var(--border);overflow:hidden">
+      <div style="background:var(--blk);padding:10px 12px;display:grid;grid-template-columns:2fr 1fr 1fr auto">
+        <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#888;padding:0 12px">Name &amp; Role</div>
+        <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#888;padding:0 12px">Region</div>
+        <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#888;padding:0 12px">JD Status</div>
+        <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#888;padding:0 24px"></div>
+      </div>
+      <table style="width:100%;border-collapse:collapse">
+        <colgroup>
+          <col style="width:42%"><col style="width:18%"><col style="width:18%"><col style="width:22%">
+        </colgroup>
+        <tbody>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#C9A84C;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Raj Kumar</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Global COO & CEO — UK, Europe, USA</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Global</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('raj')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#C9A84C;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#111;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Ajay Kawa</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">COO — UK & Europe</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">UK/Europe</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('ajay')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#111;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#15803D;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Alia Taub</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Global CPO · Training & BD</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Global</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('alia')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#15803D;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#B45309;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Kirk Demeter</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">CEO — USA</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('kirk')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#B45309;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#0891B2;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Sahil Nijhawan</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">CEO — Australia</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('sahil')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#0891B2;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#065F46;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Adonis Iliopoulos</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">CEO — Transport · ORN Fleet</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Europe</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('adonis')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#065F46;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#1E40AF;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Drew (Dhruv) Soni</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">CFO — UK & All Regions</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">UK/Global</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('dhruv')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#1E40AF;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#D97706;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">TBC</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">CEO — Middle East</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Middle East</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('me_ceo')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#D97706;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#92400E;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Kerryn Collins</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">COO — USA Operations</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('kerryn_coo')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#92400E;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#C9A84C;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Ken Newton</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Contracts Manager — UK & Europe</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">UK/Europe</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('ken')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#C9A84C;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#1D4ED8;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Clinton Thomas</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">GIT Quality Control Manager</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">UK</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('clinton')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#1D4ED8;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#1A73E8;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">David Tan</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Head — Air & Transport</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">UK/Global</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('david')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#1A73E8;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#7C3AED;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Manish Suchde</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Global Partnerships & DMC</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">UK/Global</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('manish')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#7C3AED;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#C9A84C;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Kerryn & Linda (TAG)</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">B2B & Credits — TAG</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA/Global</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('tag')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#C9A84C;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#0891B2;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Yukti Kumar</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">DMC Lead — ANZ · Nexus</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('yukti')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#0891B2;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#D97706;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Baris Intepe</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">DMC Lead — Turkey & ME Gateway</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Middle East</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#D1FAE5;border:1px solid #6EE7B7;color:#065F46\">Full JD &amp; KPIs</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><button onclick="openModal('baris')" style="font-size:11px;font-weight:700;padding:5px 14px;border-radius:6px;background:#D97706;color:#fff;border:none;cursor:pointer;white-space:nowrap">View 360 ↗</button></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#1A73E8;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Jackie Fontanez</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Director of Reservations & Operations</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#7C3AED;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Jonna Jackson</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Director of Europe / Product Strategy</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#7C3AED;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Linda Furber</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Director of Product</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#B45309;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">John Gunning</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Director of Key Accounts</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#D97706;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Manmeet Singh</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Director of Sales & Marketing</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#D97706;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Jeff Adam</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Director of Advisor Engagement & Growth</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#D97706;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Janie Hall</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Director of Sales (Part-time)</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#1A73E8;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Lisa Tennerelli-Escover</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Reservations Manager</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#1A73E8;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Cherice Harrell</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Reservations Supervisor</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#065F46;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Kim Faucette</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Operations Manager</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#065F46;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Judy Jenkins</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Customer Service Manager (PT)</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#B45309;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Michael Brown</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">National Accounts Manager</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#D97706;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Chris Underwood</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Marketing Coordinator</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#D97706;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Jane Moore</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Sales Coordinator</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#7C3AED;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Denise Schmeideknecht</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Product Manager — Europe (Switzerland)</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#0891B2;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Elicia Edwards</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Product Co-ordinator — Oceania</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#1E40AF;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Whitney Palmer</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Finance Manager</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#1E40AF;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Martin</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">CPA</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#1E40AF;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Sowmya Elangovan</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Accounts Clerk</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">USA</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#0891B2;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">James Gottschalk</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Distribution Manager · Nexus Melbourne</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#065F46;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Nitesh Setia</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Operations Manager</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#D97706;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Gemma Martin</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Team Leader — Sales Support</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#D97706;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Shae Tyler</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Assistant Team Leader</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#065F46;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Harish Kumar</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Operations Consultant</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#065F46;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Christelle Martins</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Operations Consultant</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#065F46;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Virstef Ciefanny</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Operations Consultant</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#065F46;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Muskan Muskan</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Junior Travel Operations Consultant</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#065F46;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Palak Kapahi</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Junior Travel Operations Consultant</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#B45309;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Marguerite Du Plessis</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">QC & Group Consultant</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#374151;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Bikramjit Singh Oberoi</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Fleet Manager</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#D97706;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Aung Ko Zin</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Sales Support Consultant</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#D97706;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Dora Bobadilla</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Sales Support Consultant</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#D97706;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Nipunika Ranasinghe</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Sales Support Consultant</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#0891B2;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Weizhe Lin</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Product Consultant</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#0891B2;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Ying Liu</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Product Consultant</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+  <tr class="jd-row">
+    <td style="padding:10px 12px;display:flex;align-items:center;gap:10px">
+      <div style="width:4px;height:36px;background:#1E40AF;border-radius:99px;flex-shrink:0"></div>
+      <div>
+        <div style="font-size:13px;font-weight:800;color:var(--text)">Amey Ghadigaonkar</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:1px">Junior Accountant</div>
+      </div>
+    </td>
+    <td style="padding:10px 12px;font-size:11px;color:var(--mid);vertical-align:middle">Australia</td>
+    <td style="padding:10px 12px;font-size:11px;vertical-align:middle"><span style=\"font-size:10px;font-weight:700;padding:2px 9px;border-radius:99px;background:#F4F5F7;border:1px solid #E2E2DE;color:#888\">JD Pending</span></td>
+    <td style="padding:10px 12px;text-align:right;vertical-align:middle"><span style="display:flex;align-items:center;gap:5px;font-size:11px;color:#aaa;font-style:italic">⏳ Awaiting JD</span></td>
+  </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="margin-top:14px;font-size:10px;color:var(--muted);text-align:right">52 roles listed · 16 with full JD · 36 awaiting</div>
+  </div>
+</div>
+
 <!-- MODAL -->
 <div class="modal-ov" id="the360Modal" onclick="if(event.target===this)closeModal()">
   <div class="modal">
@@ -1060,7 +1762,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 <!-- FOOTER -->
 <div class="footer">
   <div class="ft">ORN Commercial Division · 17 Hanover Square, London W1S 1BN · Confidential · 2026</div>
-  <div class="ft">Raj Kumar — Global CRO &amp; CEO · HCL Group · ISO 27001</div>
+  <div class="ft">Raj Kumar — Global COO &amp; CEO · HCL Group · ISO 27001</div>
 </div>
 
 <script>
@@ -1074,24 +1776,265 @@ function switchTab(id,btn){
 <script>
 // ── PROFILES ─────────────────────────────────────────────────────────────────
 const PROFILES = {
-  raj:{tag:"Global CRO & CEO — UK, Europe, USA",name:"Raj Kumar",title:"Global CRO & CEO · Commercial Division",color:"#0a0a0a",badges:["Global CRO","UK & Europe","USA","17 Hanover Square"],reports:"TBC",directs:["Ajay Kawa (COO UK/Europe)","Alia Taub (Global CPO)","Kirk Demeter (CEO USA)","Sahil Nijhawan (CEO Australia)","Adonis Iliopoulos (CEO Transport)","Drew/Dhruv (CFO UK TBD)","Middle East CEO (TBC)","UK CFO (Recruiting)"],purpose:"Global CRO and CEO for UK, Europe and USA. Leads the ring-fenced commercial division across five regions. Owns overall commercial strategy, P&L, DMC partnership approach and the senior leadership team. Centralised role spanning all geographic areas.",resp:["Full P&L accountability across all five regions","Sets and executes global commercial and product strategy","Leads and develops senior leadership team (Ajay, Alia, Kirk, Sahil, Adonis, Dhruv)","Owns DMC partnership strategy — selective, value-add only","Chairs monthly leadership reviews and quarterly performance board","Oversees UK CFO recruitment and finance coordination","Drives cruise division establishment through UK"],skills:["CEO/CRO experience at multi-region scale","Deep travel industry commercial expertise","P&L management across geographies","Leadership development","Cruise and complex product experience"],kpis:["Commercial Division total revenue vs plan","EBITDA margin across all regions","Leadership team retention","Cruise division launch milestones","Monthly board reporting delivery"],meetings:["Monthly Leadership Review (chairs)","Quarterly Performance Board","Weekly Commercial Ops Review","UK CFO onboarding once hired"],},
-  ajay:{tag:"COO — UK & Europe",name:"Ajay Kawa",title:"Chief Operating Officer · UK & Europe",color:"#111111",badges:["UK & Europe","London HQ","↑ Raj Kumar"],reports:"Raj Kumar (Global CRO & CEO)",directs:["Ken Newton (Contracts Manager)","Clinton Thomas (GIT QC)","David Tan (Air & Transport)","Manish Suchde (Global Partnerships)","Kerryn & Linda (TAG)","UK DMO Administrator","Contract Processing"],purpose:"Chief Operating Officer for UK & Europe. Day-to-day operational leadership — owning the UK commercial team including contracting, GIT quality control, air & transport product and global DMC partnerships. Drives commercial execution across UK and Europe.",resp:["Day-to-day operational leadership of UK & Europe commercial team","Manages Ken Newton, Clinton Thomas, David Tan, Manish Suchde, TAG","Chairs weekly commercial operations review","Owns all commercial authority for UK & Europe sign-off","Drives GIT, MICE and FIT product quality and commercial performance","Coordinates cruise division establishment with Raj Kumar","Reports to Raj Kumar on UK & Europe P&L"],skills:["Commercial COO experience in travel","Contract authority and supplier management","Team leadership — 7 direct reports","P&L and commercial performance management","Cruise and complex group product"],kpis:["UK & Europe revenue vs plan","Contract renewal rate 95%+","GIT QC compliance 100%","Commercial team performance","Cruise division launch support"],meetings:["Weekly Commercial Ops Review (chairs)","Monthly Leadership Review","Monthly DMC partner reviews","Quarterly strategy with Raj"],},
-  alia:{tag:"Global CPO",name:"Alia Taub",title:"Chief People Officer · Training & BD · Global",color:"#15803D",badges:["Global","People & HR","Training & BD","↑ Raj Kumar"],reports:"Raj Kumar (Global CRO & CEO)",directs:["HR Managers (by region)","Training Manager (TBC)","Skyjet Lead (TBC)"],purpose:"Global Chief People Officer. Owns all HR, training and business development across the commercial division globally. Leads the Skyjet transition programme and is building the ORN Travel Academy — an apprenticeship-led travel agent scheme and homeworkers programme.",resp:["Global HR — all people functions across five regions","Delivers leadership and management training across all teams","Leads Skyjet transition and growth programme","Building the ORN Travel Academy — apprentice travel agents and homeworkers","Establishes training and development calendar globally","Ensures policy compliance across all regions","Reports people metrics to Raj Kumar monthly"],skills:["Global CPO/CHRO experience","Training design and delivery","Business development and commercial thinking","Change management","Leadership coaching"],kpis:["Policy certification 100% across all regions","Training satisfaction 4.2/5+","Skyjet programme milestones","Travel Academy first cohort launch","Staff retention 85%+"],meetings:["Monthly Leadership Review","Weekly HR & Training Review","Skyjet Weekly Update","Quarterly People Board"],},
-  kirk:{tag:"CEO — USA",name:"Kirk Demeter",title:"Chief Executive Officer · North America",color:"#B45309",badges:["USA","North America","↑ Raj Kumar"],reports:"Raj Kumar (Global CRO & CEO)",directs:["Kerryn Collins (COO USA)","US Sales Manager (TBC)","US Marketing (TBC)"],purpose:"Chief Executive Officer for USA and North America. Full P&L accountability for the US market. Manages Kerryn Collins as COO on US operations, builds the US agent and corporate network, and drives North American growth.",resp:["Full P&L for USA and North America","Manages Kerryn Collins (COO) and US team","Builds US travel agent and corporate network","Develops North America growth strategy","Reports monthly P&L to Raj Kumar","Represents Commercial Division at US travel trade events","Oversees US finance — independent reporting"],skills:["CEO experience in US travel","US agency and corporate distribution","Commercial P&L management","MICE and group travel","US regulatory compliance"],kpis:["US Revenue vs plan","US agent network growth","US customer satisfaction 4.2/5+","Monthly P&L delivery to Raj","North America market milestones"],meetings:["Monthly Leadership Review","Weekly US Ops Review (with Kerryn)","Monthly US agent reviews","Quarterly strategy with Raj"],},
-  kerryn_coo:{tag:"COO — USA",name:"Kerryn Collins",title:"Chief Operating Officer · USA Operations",color:"#92400E",badges:["USA Ops","Customer Service","↑ Kirk Demeter"],reports:"Kirk Demeter (CEO USA)",directs:["US Ops Team (TBC)","US CS Lead (TBC)"],purpose:"Chief Operating Officer for USA Operations. Partners with Kirk Demeter on US operational delivery — booking fulfilment, customer service, agent support and operational performance.",resp:["Day-to-day management of all US operations","Manages US Ops Team and Customer Service Lead","Ensures US bookings processed within SLA","Manages operational escalations from US agents","Oversees US CS quality and complaint resolution","Reports operational KPIs to Kirk weekly"],skills:["Operations management in travel","SLA management and process discipline","Customer service leadership","Cross-time-zone coordination"],kpis:["US booking SLA 95%+","US CS satisfaction 4.2/5+","Escalation resolution 48hrs","FCR rate 70%+"],meetings:["Weekly US Ops Review (with Kirk)","Daily ops check","Monthly CS quality review"],},
-  sahil:{tag:"CEO — Australia",name:"Sahil Nijhawan",title:"Chief Executive Officer · Australia & New Zealand",color:"#0891B2",badges:["ANZ","Asia Pacific","Nexus DMC","↑ Raj Kumar"],reports:"Raj Kumar (Global CRO & CEO)",directs:["Yukti Kumar (Nexus ANZ)","ANZ Sales Manager (TBC)","ANZ Ops Manager (TBC)"],purpose:"Chief Executive Officer for Australia and ANZ. Full P&L accountability — building the ANZ agent and corporate network, managing Nexus DMC Australia with Yukti Kumar, and driving ANZ regional growth. Direct report to Raj Kumar at same level as Ajay and Alia.",resp:["Full P&L for Australia and ANZ","Manages Yukti Kumar (Nexus ANZ) and ANZ team","Builds ANZ travel agent and corporate network","Develops ANZ growth strategy","Reports monthly P&L to Raj Kumar","Represents Commercial Division at ANZ trade events","Oversees ANZ finance — independent reporting"],skills:["CEO/MD experience in Australian travel","ANZ distribution and agency landscape","Commercial P&L management","Nexus DMC partnership management","Asia Pacific market knowledge"],kpis:["ANZ Revenue vs plan","ANZ agent network growth","ANZ CS satisfaction","Nexus DMC milestones","Monthly P&L to Raj"],meetings:["Monthly Leadership Review","Weekly ANZ Ops Review","Monthly Nexus review with Yukti","Quarterly strategy with Raj"],},
-  adonis:{tag:"CEO — Transport",name:"Adonis Iliopoulos",title:"CEO Transport · ORN European Fleet · 96+ Vehicles",color:"#065F46",badges:["96+ Vehicles","ISO 27001","London/Europe","↑ Raj Kumar"],reports:"Raj Kumar (Global CRO & CEO)",directs:["Transport Director (TBC)","Fleet Manager (TBC)","Driver Ops Manager (TBC)"],fleet_detail:'<div style="margin-top:10px"><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#065F46;margin-bottom:6px">🚌 Touring Coach Fleet — 30+ Vehicles</div><table style="width:100%;border-collapse:collapse;font-size:9px;margin-bottom:10px"><tr style="background:#F0FFF4"><th style="padding:4px 6px;text-align:left;color:#14532D;font-weight:700">Vehicle</th><th style="padding:4px;text-align:center;color:#14532D;font-weight:700">Units</th><th style="padding:4px;text-align:center;color:#14532D;font-weight:700">Pax</th><th style="padding:4px;text-align:center;color:#14532D;font-weight:700">Vintage</th></tr><tr style="border-bottom:1px solid #E5E7EB"><td style="padding:4px 6px;font-weight:700">Higer Scania Touring HD <span style="background:#065F46;color:#fff;font-size:7px;padding:1px 5px;border-radius:99px">FLEET LEADER</span></td><td style="text-align:center;padding:4px;color:#065F46;font-weight:700">14</td><td style="text-align:center;padding:4px">50</td><td style="text-align:center;padding:4px">2025–26</td></tr><tr style="border-bottom:1px solid #E5E7EB;background:#F8FAFC"><td style="padding:4px 6px">Neoplan Tourliner</td><td style="text-align:center;padding:4px;color:#065F46;font-weight:700">4</td><td style="text-align:center;padding:4px">49–57</td><td style="text-align:center;padding:4px">2026</td></tr><tr style="border-bottom:1px solid #E5E7EB"><td style="padding:4px 6px">MB Tourismo RHD</td><td style="text-align:center;padding:4px;color:#065F46;font-weight:700">4</td><td style="text-align:center;padding:4px">19–51</td><td style="text-align:center;padding:4px">2023–25</td></tr><tr style="border-bottom:1px solid #E5E7EB;background:#F8FAFC"><td style="padding:4px 6px">Temsa 2024</td><td style="text-align:center;padding:4px;color:#065F46;font-weight:700">5</td><td style="text-align:center;padding:4px">50–60</td><td style="text-align:center;padding:4px">2024</td></tr><tr><td style="padding:4px 6px">MAN Lions Coach L</td><td style="text-align:center;padding:4px;color:#065F46;font-weight:700">3</td><td style="text-align:center;padding:4px">50–51</td><td style="text-align:center;padding:4px">2014–16</td></tr></table><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#1E40AF;margin-bottom:6px">🚐 Private Transfer — 65+ Vehicles · MB Exclusively</div><table style="width:100%;border-collapse:collapse;font-size:9px"><tr style="background:#EFF6FF"><th style="padding:4px 6px;text-align:left;color:#1E40AF;font-weight:700">Vehicle</th><th style="padding:4px;text-align:center;color:#1E40AF;font-weight:700">Units</th><th style="padding:4px;text-align:center;color:#1E40AF;font-weight:700">Pax</th><th style="padding:4px 6px;text-align:left;color:#1E40AF;font-weight:700">Use Case</th></tr><tr style="border-bottom:1px solid #E5E7EB"><td style="padding:4px 6px;font-weight:700">V-Klasse Long</td><td style="text-align:center;padding:4px;color:#1E40AF;font-weight:700">35+</td><td style="text-align:center;padding:4px">7</td><td style="padding:4px 6px">FIT · Airport · VIP</td></tr><tr style="border-bottom:1px solid #E5E7EB;background:#F8FAFC"><td style="padding:4px 6px">V-Klasse Style</td><td style="text-align:center;padding:4px;color:#1E40AF;font-weight:700">5+</td><td style="text-align:center;padding:4px">6</td><td style="padding:4px 6px">VIP · Luxury FIT</td></tr><tr style="border-bottom:1px solid #E5E7EB"><td style="padding:4px 6px">Vito Tourer</td><td style="text-align:center;padding:4px;color:#1E40AF;font-weight:700">8</td><td style="text-align:center;padding:4px">9</td><td style="padding:4px 6px">Groups · Shuttles</td></tr><tr><td style="padding:4px 6px">Vito Standard</td><td style="text-align:center;padding:4px;color:#1E40AF;font-weight:700">5+</td><td style="text-align:center;padding:4px">9</td><td style="padding:4px 6px">Transfers · Groups</td></tr></table></div>',
-  purpose:"CEO Transport. Direct report to Raj Kumar at same level as Ajay and Alia. Full management and commercial responsibility for ORN's 96+ vehicle European fleet — touring coaches and private transfers. Owns all B2B transport partnerships and driver operations.",resp:["Full P&L for ORN Transport Division","Manages full coach fleet: 14x Higer Scania, 4x Neoplan, 4x MB Tourismo, 5x Temsa, 3x MAN","Manages private transfer fleet: 35+ V-Klasse Long, 5+ V-Klasse Style, 8x Vito Tourer","Owns all B2B trade partner relationships — tour operators, DMCs, corporate, cruise lines","Driver compliance, licensing, safety standards","Coordinates with GIT, MICE and FIT ops on ground logistics","Owns driver float — issue, tracking, 48hr settlement via LERMS"],skills:["Transport P&L leadership","European coach and transfer fleet management","Driver operations and compliance","B2B trade partner management","LERMS or fleet management systems"],kpis:["On-time departure 98%+","Driver float settlement 48hrs 100%","Fleet utilisation 85%+ peak","Client satisfaction 4.3/5+","Transport cost vs budget"],meetings:["Weekly Ops Review with Raj/Ajay","Monthly transport performance review","Quarterly fleet and supplier review","Daily driver ops check"],},
-  dhruv:{tag:"CFO — UK TBD",name:"Drew (Dhruv)",title:"Chief Financial Officer · UK-based · Coord all regions",color:"#1E40AF",badges:["Finance","All Regions","UK-based","↑ Raj Kumar"],reports:"Raj Kumar (Global CRO & CEO)",directs:["Finance Manager UK (TBC)","Finance contacts in each region"],purpose:"UK-based CFO. Direct report to Raj Kumar. Responsible for coordinating monthly financial reporting from all five regions (UK, Europe, USA, Australia, Middle East). Each region manages its own local finance independently — Drew coordinates the consolidated group numbers from the UK.",resp:["Coordinates monthly financial reporting from all five regions","Manages UK finance and European finance (centralised in UK)","Receives monthly reports from USA, Australia and Middle East","Produces consolidated management accounts for Raj Kumar","Oversees payment controls and gate compliance","Supports UK CFO recruitment process","Provides financial modelling for commercial decisions"],skills:["CFO experience across multiple jurisdictions","Consolidated group reporting","Multi-currency financial management","UK and international accounting standards","Commercial financial analysis"],kpis:["Monthly close consolidated within 5 working days","All regions reporting on time 100%","Finance accuracy across regions","Consolidated accounts to Raj monthly"],meetings:["Monthly Leadership Review","Finance coordination calls with each region","Monthly management accounts delivery","Quarterly board financial reporting"],},
-  ken:{tag:"Contracts Manager · UK & Europe",name:"Ken Newton",title:"Hotel & Supplier Contracting — European Portfolio",color:"#C9A84C",badges:["UK & Europe","27 Hotels","Field-based","↑ Ajay Kawa"],reports:"Ajay Kawa (COO UK & Europe)",directs:["Eileen Corrales (Europe Incoming)","UK DMO Administrator","Contract Processing"],purpose:"Leads all hotel and supplier contracting across the European portfolio. Field-based, representing ORN directly with hotel partners across Europe. Manages allotments, rate structures and the UK DMO team including Administrator and Contract Processing.",resp:["Manages all European hotel contracting — 27+ properties","Negotiates rates, allotments and terms with hotel partners","Manages Europe Incoming (Eileen Corrales) relationship","Oversees UK DMO Administrator and Contract Processing","Ensures accurate and timely rate loading via India team","Benchmarks European hotel rates quarterly","Reports contracting performance to Ajay Kawa"],skills:["Hotel contracting and rate negotiation","European travel product","Allotment and yield management","Supplier relationship management"],kpis:["Contract renewal 95%+","Rate loading accuracy 99%+","Portfolio competitiveness","Allotment utilisation rate"],meetings:["Monthly Commercial Review with Ajay","Quarterly supplier reviews","Weekly loading call with India team","Monthly UK DMO meeting"],},
-  clinton:{tag:"GIT Support & Quality Control",name:"Clinton Thomas",title:"GIT QC Manager · Pre-Departure · Incoming Tours · UK DMO",color:"#1D4ED8",badges:["UK · Incoming Tours & Ops QC","GIT QC","T-7 Day Gate","↑ Ajay Kawa"],reports:"Ajay Kawa (COO UK & Europe)",directs:[],purpose:"GIT Support and Quality Control Manager within the UK & Europe DMO. Established in response to the June 2026 GIT Europe Operational Review. Owns all pre-departure QC gates, incoming tour coordination and sign-off authority for all GIT Europe departures.",resp:["Owns all pre-departure QC checks — T-30, T-14, T-7 and T-48hr gates","Manages incoming tour coordination — hotel confirmations, coach allocations, guide briefings","Sign-off authority for all GIT Europe departures before handover to ops","Reviews all group files against QC checklist before T-7","Escalates unresolved issues to Ajay Kawa","Maintains GIT QC log and departure tracking dashboard","Coordinates with Ken Newton on hotel accuracy and David Tan on transport"],skills:["GIT operations and quality control","Incoming tour management","Pre-departure process management","Strong attention to detail and compliance"],kpis:["T-7 gate sign-off 100%","Pre-departure QC error rate <1%","Hotel confirmation accuracy 99%+","Escalation resolution 24hrs","Zero departures without full QC sign-off"],meetings:["Weekly UK DMO catch-up","T-30 departure review","Monthly GIT QC review with Ajay","Pre-departure call with Adonis T-7"],},
-  david:{tag:"Head — Air & Transport",name:"David Tan",title:"Air Product · Group Flights · Transport Integration",color:"#1A73E8",badges:["Global","Group Air","ORN Transport","Cathay Pacific","↑ Ajay Kawa"],reports:"Ajay Kawa (COO UK & Europe)",directs:["Ticketing Team (India)","Transport Coordination"],purpose:"Owns all air and transport product across the Commercial Division. Responsible for group block management, PNR processing, Cathay Pacific partnership and integration of ORN Transport into the commercial product offering.",resp:["Manages all group air — block seats, PNR, international and domestic","Owns Cathay Pacific group programme with Manish Suchde","Coordinates transport integration with Adonis (ORN Transport)","Manages T-30 flight sealing and group block release","Ensures flight product priced, packaged and loaded accurately","Reports air performance to Ajay Kawa","Manages ticketing team in India fulfilment"],skills:["Group air contracting and block management","PNR and GDS experience","Transport product integration","Airline partnership management"],kpis:["T-30 sealing compliance 98%+","Block utilisation 90%+","PNR error rate <0.5%","Cathay Pacific programme delivery"],meetings:["Weekly air product review with Ajay","Monthly Cathay Pacific review","T-30 compliance check weekly","Quarterly transport integration review"],},
-  manish:{tag:"Global Partnerships & DMC",name:"Manish Suchde",title:"Global Partnerships · DMC · Cathay Pacific · Macau",color:"#7C3AED",badges:["Global","Nexus DMC","Cathay Pacific","Macau Tourism","↑ Ajay Kawa"],reports:"Ajay Kawa (COO UK & Europe)",directs:["Baris Intepe (Turkey/ME)","Yukti Kumar (ANZ) — dotted line"],purpose:"Owns all global DMC relationships and specialist product partnerships. Manages Nexus DMC Australia, Cathay Pacific Indian outbound programme and Macau Tourism Board. Oversees Baris Intepe for Turkey and Middle East gateway.",resp:["Manages global DMC relationships — Nexus ANZ, Turkey/ME","Owns Cathay Pacific Indian outbound programme (Jul–Nov 2026)","Leads Macau Tourism Board collaboration","Manages Baris Intepe and coordinates with Yukti Kumar on ANZ","Drives three-phase DMC integration: Relationship → Static Contract → Direct API","Provides supplier intelligence to Ken Newton for contracting"],skills:["DMC relationship management","Global travel product","Partnership development","Asia Pacific and Middle East markets","Programme management"],kpis:["DMC coverage across all active regions","Cathay Pacific revenue vs target","Macau collaboration milestones","DMC integration model progress"],meetings:["Monthly Global Partnerships Review","Quarterly DMC partner reviews","Cathay Pacific programme monthly","Macau Tourism Board quarterly"],},
-  yukti:{tag:"DMC Lead — ANZ",name:"Yukti Kumar",title:"Product Manager & DMC Lead · Australia & New Zealand",color:"#0891B2",badges:["ANZ","Nexus DMC","↑ Sahil / Ajay"],reports:"Sahil Nijhawan (CEO Australia) / Ajay Kawa (dotted line)",directs:["James Gottschalk (Nexus Melbourne)"],purpose:"Manages the Nexus DMC Australia relationship and ANZ product development. Works alongside Sahil Nijhawan on the ANZ region and with Manish Suchde on Asia Pacific strategy.",resp:["Manages Nexus DMC Australia relationship and product","Works with James Gottschalk (Nexus Melbourne) on ANZ ops","Develops ANZ touring and product portfolio","Sources DMC intelligence for Manish Suchde on Asia Pacific","Supports Sahil Nijhawan on ANZ commercial development","Coordinates ANZ loading and QC with India fulfilment"],skills:["DMC relationship management","ANZ travel product","Asia Pacific market expertise","Product development and curation"],kpis:["ANZ product range","Nexus DMC SLA compliance","Product loading accuracy","Asia Pacific supplier pipeline"],meetings:["Monthly ANZ product review","Nexus DMC weekly","Quarterly Asia Pacific review with Manish","Monthly ANZ ops with Sahil"],},
-  baris:{tag:"DMC Lead — Turkey & ME Gateway",name:"Baris Intepe",title:"Turkey · Eastern Mediterranean · Middle East Gateway",color:"#D97706",badges:["Turkey","Eastern Med","ME Gateway","↑ Ajay/Manish"],reports:"Ajay Kawa / Manish Suchde",directs:[],purpose:"Manages ORN's Turkey and Eastern Mediterranean DMC relationships and acts as the gateway for Middle East commercial development pending CEO hire.",resp:["Manages Turkey and Eastern Med DMC relationships","Acts as Middle East gateway — feeds market intelligence for ME CEO hire","Develops Turkey and Eastern Med product portfolio","Sources and qualifies new suppliers across Eastern Med and MENA","Provides market intelligence to Manish Suchde","Supports commercial negotiations for Turkey/ME contracts"],skills:["Turkey and Eastern Med travel expertise","DMC relationship management","MENA market knowledge","Commercial negotiation"],kpis:["Turkey/ME product range","DMC partner satisfaction","ME market readiness for CEO appointment"],meetings:["Monthly review with Manish","Quarterly Eastern Med supplier reviews","ME market intelligence updates"],},
-  tag:{tag:"B2B & Credits · TAG",name:"Kerryn & Linda",title:"Travel Answers Group · Global B2B & Credits",color:"#C9A84C",badges:["Travel Answers Group","Global B2B","Credits","USA & Global","↑ Ajay Kawa"],reports:"Ajay Kawa (COO UK & Europe)",directs:["TAG Agent Network","Credits Operations"],purpose:"Leads the Travel Answers Group relationship — ORN's primary B2B agent network partner and travel credits programme. Manages global trade agent relationships and the TripFactory/ORN credits commercial interface.",resp:["Manages TAG commercial and operational relationship with ORN","Owns travel credits — issuance, redemption, reconciliation","Builds and manages B2B agent network through TAG","Provides agent sales support and commercial interface","Manages credits balance reporting","Reports B2B performance and credits utilisation to Ajay"],skills:["B2B agent network management","Credits and loyalty programme","Commercial partnership development","Travel trade relationships"],kpis:["B2B agent network and activation rate","Credits utilisation 70%+","Credits processing accuracy 99.5%+","Agent satisfaction","Revenue through TAG network"],meetings:["Monthly Commercial Review with Ajay","Quarterly TAG strategy review","Monthly credits reconciliation"],},
-  me_ceo:{tag:"CEO — Middle East · TBC",name:"TBC",title:"Chief Executive Officer · GCC & MENA Region",color:"#D97706",badges:["GCC","MENA","↑ Raj Kumar","Recruiting"],reports:"Raj Kumar (Global CRO & CEO)",directs:["ME Sales Manager (TBC)","ME Ops Manager (TBC)"],purpose:"The Middle East CEO will lead ORN's commercial expansion into GCC and MENA. Baris Intepe is the current gateway. CEO hire in progress, to report directly to Raj Kumar at the same level as Ajay and Alia.",resp:["Full P&L for GCC and MENA region","Build ORN commercial presence in UAE, Saudi Arabia and wider GCC","Manage Baris Intepe as Turkey/ME gateway","Develop ME agent and corporate travel network","Source and manage regional DMC relationships","Report to Raj Kumar on ME P&L and market development"],skills:["CEO/VP experience in GCC/MENA travel","Arabic preferred","GCC travel distribution","Commercial P&L management","Middle East regulatory knowledge"],kpis:["ME Revenue — Year 1 target TBC","GCC agent network launch","Regional DMCs established","ME market presence"],meetings:["Monthly Leadership Review","Weekly ME Ops Review","Quarterly strategy with Raj"],},
+  raj:{
+    tag:"Global COO & CEO — UK, Europe, USA", name:"Raj Kumar",
+    title:"Global COO & CEO · Commercial Division",
+    color:"#0a0a0a",
+    badges:["Global COO","UK & Europe","USA","17 Hanover Square","Reports to: TBC"],
+    reports:"TBC",
+    directs:["Ajay Kawa (COO UK/Europe)","Alia Taub (Global CPO)","Kirk Demeter (CEO USA)","Sahil Nijhawan (CEO Australia)","Adonis Iliopoulos (CEO Transport)","Drew/Dhruv (CFO UK TBD)","Middle East CEO (TBC)","UK CFO (Recruiting)"],
+    scope:"Commercial Division · All Five Regions · Full P&L",
+    purpose:"Global COO and CEO for UK, Europe and USA. Leads the ring-fenced commercial division across five regions from 17 Hanover Square, London. Owns overall commercial strategy, revenue growth, P&L accountability and the senior leadership team. Centralised role spanning all geographic areas — the only role that touches all five regions simultaneously.",
+    resp:["Sets global commercial strategy, revenue targets and annual operating plan for all five regions","Full P&L ownership across UK, Europe, USA, Australia and Middle East","Leads and develops the senior leadership team: Ajay, Alia, Kirk, Sahil, Adonis, Dhruv","Owns DMC partnership strategy — selective, value-add only model","Oversees Skyjet acquisition and transition to ORN Cruise Operation","Chairs monthly leadership reviews and quarterly performance board","Drives UK CFO recruitment and consolidated group financial reporting","Approves all senior hires and structural changes across the division","Represents the Commercial Division to ORN Holdings board","Leads sales strategy alignment — group tours, cruise packages and centralised DMC Europe"],
+    skills:["Proven CEO or COO experience in multi-region travel or hospitality","Deep travel industry commercial expertise — product, distribution and P&L","Track record of building and leading international senior leadership teams","Cruise and complex group product commercial experience","DMC and ground operator partnership structuring","M&A experience (Skyjet transition)"],
+    qualifications:["Degree in Business, Hospitality, Tourism or equivalent","10+ years senior leadership in travel or hospitality","Multi-region P&L experience — preferably UK, US and APAC","Board-level reporting experience"],
+    kpis:["Commercial Division total revenue vs annual plan","EBITDA margin across all five regions","Senior leadership team retention and satisfaction","Skyjet/Cruise transition programme milestone delivery","Monthly board reporting — on time and accurate","UK CFO appointed within agreed timeline"],
+    meetings:["Monthly Leadership Review (chairs)","Quarterly Performance Board (chairs)","Weekly Commercial Ops Review","Bi-monthly Skyjet/Cruise Transition Update","UK CFO onboarding (once hired)"],
+    alia_note:"Full role review by Alia Taub required: confirm reporting line, define performance review cadence, complete competency framework for CEO/COO level, agree succession planning for key direct reports.",
+  },
+  ajay:{
+    tag:"COO — UK & Europe", name:"Ajay Kawa",
+    title:"Chief Operating Officer · UK & Europe",
+    color:"#111111",
+    badges:["UK & Europe","London HQ","COO","Reports to Raj Kumar"],
+    reports:"Raj Kumar (Global COO & CEO)",
+    directs:["Ken Newton (Contracts Manager)","Clinton Thomas (GIT QC)","David Tan (Air & Transport)","Manish Suchde (Global Partnerships)","Kerryn & Linda (TAG)","UK DMO Administrator","Contract Processing"],
+    scope:"UK & Europe · 7 Direct Reports · All Commercial Authority UK/Europe",
+    purpose:"Chief Operating Officer for UK & Europe. Day-to-day operational leadership of the commercial division from 17 Hanover Square. Owns commercial execution, team leadership, contracting authority and operational performance across UK and Europe. The primary decision-maker for all UK and European commercial matters below Raj Kumar.",
+    resp:["Day-to-day operational leadership of the full UK & Europe commercial team","Direct management of 7 reports: Ken Newton, Clinton Thomas, David Tan, Manish Suchde, TAG, Administrator and Contract Processing","Chairs weekly commercial operations review — driving execution across all product and commercial workstreams","Holds all commercial sign-off authority for UK & Europe — contracts, rates, DMC agreements","Drives GIT, MICE and FIT product quality and revenue performance","Supports Skyjet/Cruise division establishment and handover to cruise commercial model","Manages the UK DMO quality control and gate sign-off framework with Clinton Thomas","Coordinates with David Tan on Cathay Pacific programme and air product","Reviews and approves all European hotel contract terms with Ken Newton","Reports UK & Europe P&L and commercial performance to Raj Kumar monthly"],
+    skills:["Commercial leadership — travel, hospitality or DMC environment","Contract authority and senior supplier negotiation","Multi-disciplinary team leadership — 7 direct reports across product, ops, QC and partnerships","P&L and commercial performance management","Cruise and complex GIT group product experience"],
+    qualifications:["Degree in Business, Tourism or equivalent","8+ years commercial or operational leadership in travel","Experience managing European hotel or DMC contracting","Strong negotiation and relationship management track record"],
+    kpis:["UK & Europe revenue vs plan — monthly","Contract renewal rate 95%+","GIT pre-departure QC compliance 100% (zero gate failures)","Commercial team NPS and productivity","Cruise division launch support — key milestones","Monthly P&L and ops reporting to Raj Kumar — on time"],
+    meetings:["Weekly Commercial Ops Review (chairs — Monday)","Monthly Leadership Review (Raj Kumar)","Monthly UK DMO team meeting","Monthly DMC partner reviews (with Manish)","Quarterly European hotel contracting review (with Ken Newton)","Skyjet/Cruise Transition Update bi-monthly"],
+    alia_note:"Alia to review: COO UK/Europe competency framework, team structure assessment (7 direct reports — appropriate span of control?), annual performance review structure, succession planning.",
+  },
+  alia:{
+    tag:"Global CPO", name:"Alia Taub",
+    title:"Chief People Officer · Training & Business Development · Global",
+    color:"#15803D",
+    badges:["Global","People & HR","Training & BD","Skyjet Lead","Reports to Raj Kumar"],
+    reports:"Raj Kumar (Global COO & CEO)",
+    directs:["HR Managers (per region — TBC)","Training Manager (TBC)","Skyjet Transition Lead (TBC)","ORN Travel Academy Lead (TBC)"],
+    scope:"Global · All Five Regions · People, Training, Skyjet & ORN Travel Academy",
+    purpose:"Global Chief People Officer. The only HR and People role that sits centrally across all five regions. Owns all HR policy, training and business development globally. Leads the Skyjet acquisition and transition programme. Building the ORN Travel Academy — an apprenticeship-led travel agent scheme — and the ORN Homeworkers programme as a new commercial and talent pipeline.",
+    resp:["Global HR policy ownership — all five regions aligned to one ORN HR framework","Designs and delivers leadership and management training across all regional teams","Leads Skyjet acquisition and transition programme — from integration through to ORN Cruise brand launch","Builds and runs the ORN Travel Academy — apprenticeship-led travel agent training scheme","Establishes the ORN Homeworkers Programme for Academy graduates","Owns the training and development calendar across all regions","Manages payroll policy framework (implementation local per region)","Ensures legal and compliance policy standards across the division","Completes all Job Descriptions and competency frameworks for all 54 roles in the Commercial Division","Reports people metrics, training satisfaction and Skyjet milestones to Raj Kumar monthly"],
+    skills:["Global CPO or CHRO experience across multiple geographies","Training design, delivery and facilitation","Change management and M&A people integration","Business development and commercial thinking — Travel Academy model","HR policy design and legal compliance across UK, USA and Australia"],
+    qualifications:["Degree in HR, Business or equivalent","CIPD or SHRM qualified preferred","8+ years senior HR leadership — ideally in travel or hospitality","Experience designing and running apprenticeship or training programmes"],
+    kpis:["All 54 role JDs completed within agreed timeline","Policy certification rate 100% across all regions","Training satisfaction score 4.2/5+ per region","Skyjet transition programme — phase milestones on time","ORN Travel Academy first cohort launched","Staff retention across Commercial Division 85%+","HR compliance — zero regulatory breaches"],
+    meetings:["Monthly Leadership Review (Raj Kumar)","Weekly HR & Training Review (chairs)","Skyjet Transition Update bi-monthly","ORN Travel Academy steering group monthly","Quarterly People Board","Regional HR partner calls (once hired)"],
+    alia_note:"Alia to self-review: confirm own JD, KPIs and performance framework with Raj Kumar. Prioritise: (1) complete all 54 role JDs, (2) establish HR framework per region, (3) Skyjet transition plan sign-off.",
+  },
+  kirk:{
+    tag:"CEO — USA", name:"Kirk Demeter",
+    title:"Chief Executive Officer · North America",
+    color:"#B45309",
+    badges:["USA","North America","CEO","Reports to Raj Kumar"],
+    reports:"Raj Kumar (Global COO & CEO)",
+    directs:["Kerryn Collins (COO USA)","John Gunning (Director Key Accounts)","Manmeet Singh (Director Sales & Marketing)","Jeff Adam (Director Advisor Engagement)","Janie Hall (Director Sales PT)"],
+    scope:"USA · North America · Full Regional P&L",
+    purpose:"Chief Executive Officer for the USA and North America region. Full P&L accountability for the US market — managing a team of Directors and the COO. Owns the US agent and corporate travel network, MICE and leisure group bookings, and drives North American growth within the Commercial Division structure.",
+    resp:["Full P&L accountability for USA and North America","Manages COO Kerryn Collins and all USA Directors","Builds and manages the US travel agent and B2B corporate network","Develops USA regional growth strategy in alignment with Raj Kumar","Oversees US finance independently — monthly reporting to UK CFO","Represents the Commercial Division at US travel trade events and conferences","Ensures full US regulatory compliance across all products and contracts","Drives the US team structure — currently 20+ staff across reservations, ops, product and sales","Signs off all USA commercial agreements within delegated authority","Reports monthly P&L, pipeline and team KPIs to Raj Kumar"],
+    skills:["CEO or VP-level experience in US travel market","US travel agency, consortium and corporate distribution channels","Commercial and full regional P&L management","MICE, cruise and group travel product experience","Knowledge of US federal and state travel/trade regulations"],
+    qualifications:["Degree in Business, Hospitality or Tourism","10+ years senior leadership in US travel industry","Proven P&L ownership at regional or divisional level","Strong US industry network — agents, consortia, cruise lines"],
+    kpis:["USA Revenue vs annual plan — monthly","US agent network size and activation rate","US customer satisfaction 4.2/5+","US P&L and team reporting to Raj Kumar — on time monthly","North America market development milestones","US team staff retention 80%+"],
+    meetings:["Monthly Leadership Review (Raj Kumar)","Weekly US Ops Review (with Kerryn Collins)","Monthly US Directors Review (chairs)","Monthly US agent and consortium reviews","Quarterly strategy session with Raj Kumar"],
+    alia_note:"Alia to review: USA competency framework, confirm reporting line for all USA Directors, agree performance review cadence, assess USA team structure for gaps (Customer Success, Air Team TBC).",
+  },
+  kerryn_coo:{
+    tag:"COO — USA", name:"Kerryn Collins",
+    title:"Chief Operating Officer · USA Operations",
+    color:"#92400E",
+    badges:["USA Ops","Customer Service","Operations","Reports to Kirk Demeter"],
+    reports:"Kirk Demeter (CEO USA)",
+    directs:["Jackie Fontanez (Director Res & Ops)","Judy Jenkins (CS Manager PT)","Finance Team (Whitney Palmer)"],
+    scope:"USA Operations · Customer Service · Reservations · Finance oversight",
+    purpose:"Chief Operating Officer for USA Operations. Partners with Kirk Demeter on all day-to-day US operational delivery — booking fulfilment, customer service, reservations management, agent support and operational partner relationships. New COO role above all US Directors, overseeing company strategy and operations.",
+    resp:["Day-to-day operational management of all US operations","Oversees Jackie Fontanez (Director Res & Ops) and the full reservations and operations team","Manages US Customer Service Lead Judy Jenkins (PT) and CS team","Operational oversight of US finance with Whitney Palmer","Ensures all US bookings processed within SLA — reservations, amendments and cancellations","Manages operational escalations from US agents, clients and internal teams","Drives operational efficiency improvements across the US business","Implements ORN operational standards and gate compliance across US team","Reports weekly operational KPIs to Kirk Demeter","Deputises for Kirk Demeter in his absence"],
+    skills:["Operations leadership in travel — mid-large scale","SLA and process management in reservations environment","Customer service leadership and escalation management","Financial oversight and cost control","Cross-time-zone team coordination"],
+    qualifications:["Degree in Business, Operations or equivalent","7+ years operations management in travel or hospitality","Experience in US travel reservation systems","Track record of SLA improvement and process optimisation"],
+    kpis:["US booking SLA compliance 95%+ (processing within agreed timescales)","US customer satisfaction score 4.2/5+","Operational escalation resolution within 48hrs","US ops team productivity vs target","First Contact Resolution rate 70%+","Weekly ops reporting to Kirk Demeter — on time"],
+    meetings:["Weekly US Ops Review (Kirk Demeter)","Daily ops check (self-run)","Monthly CS quality review","Monthly US Directors Review (with Kirk)","Quarterly ORN Leadership Review"],
+    alia_note:"Alia to review: COO USA competency framework, confirm org structure below Kerryn, agree performance review process with Kirk Demeter, assess whether COO role needs JD additions as team grows.",
+  },
+  sahil:{
+    tag:"CEO — Australia", name:"Sahil Nijhawan",
+    title:"Chief Executive Officer · Australia & New Zealand",
+    color:"#0891B2",
+    badges:["ANZ","Asia Pacific","Nexus DMC","Reports to Raj Kumar"],
+    reports:"Raj Kumar (Global COO & CEO)",
+    directs:["Yukti Kumar (Nexus ANZ)","Nitesh Setia (Ops Manager)","Gemma Martin (Team Leader)","Dhruv Soni (Head Finance & Ops)","James Gottschalk (Nexus Melbourne)"],
+    scope:"Australia · ANZ · Asia Pacific · Full Regional P&L · 20+ Staff",
+    purpose:"Chief Executive Officer for Australia and ANZ. Full P&L accountability for a 20+ person operation — managing the ANZ agent and corporate network, the Nexus DMC Australia partnership, and driving regional growth. Direct report to Raj Kumar at the same level as Ajay Kawa. Oversees independent ANZ finance.",
+    resp:["Full P&L accountability for Australia and New Zealand","Manages 20+ ANZ team: Yukti Kumar, Nitesh Setia, Gemma Martin, James Gottschalk, Dhruv Soni and all operations, sales and product staff","Manages Nexus DMC Australia partnership with Yukti Kumar and James Gottschalk (Melbourne)","Builds and develops the ANZ travel agent and B2B corporate network","Drives ANZ product strategy and seasonal programme in coordination with Manish Suchde (global)","Oversees ANZ finance independently — monthly reporting to UK CFO","Represents the Commercial Division at ANZ travel trade events","Ensures Australian consumer law compliance across all products","Reports monthly P&L, pipeline and team KPIs to Raj Kumar","Coordinates with Cathay Pacific programme (Jul–Nov 2026) via Manish Suchde"],
+    skills:["CEO or MD experience in Australian travel market","ANZ travel agency landscape and distribution channels","P&L ownership — regional or divisional level","Nexus DMC and Asia Pacific product expertise","Australian regulatory and compliance environment"],
+    qualifications:["Degree in Business, Tourism or equivalent","8+ years senior leadership in ANZ travel industry","Proven P&L at regional level","Strong ANZ industry network — agents, DMCs, suppliers"],
+    kpis:["ANZ Revenue vs annual plan — monthly","ANZ agent network size and activation","ANZ customer satisfaction 4.2/5+","Nexus DMC SLA and partnership milestones","ANZ P&L reporting to UK CFO — on time monthly","ANZ team staff retention 80%+"],
+    meetings:["Monthly Leadership Review (Raj Kumar)","Weekly ANZ Ops Review (chairs)","Monthly Nexus DMC review (Yukti Kumar)","Quarterly Cathay Pacific programme review (Manish Suchde)","Quarterly strategy session with Raj Kumar"],
+    alia_note:"Alia to review: ANZ competency framework, confirm all 20+ ANZ staff JDs, assess team structure for gaps, agree performance review cadence with Raj Kumar, complete Dhruv Soni dual-role clarity (AU + global CFO).",
+  },
+  adonis:{
+    tag:"CEO — Transport", name:"Adonis Iliopoulos",
+    title:"CEO Transport · ORN European Fleet · 96+ Vehicles",
+    color:"#065F46",
+    badges:["96+ Vehicles","ISO 27001","London/Europe","Reports to Raj Kumar"],
+    reports:"Raj Kumar (Global COO & CEO)",
+    directs:["Transport Director (TBC)","Fleet Manager (TBC)","Driver Ops Manager (TBC)"],
+    scope:"ORN Transport · 96+ Vehicle Fleet · European Coach & Transfer Operations",
+    fleet_detail:'<div style="margin-top:10px"><div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#065F46;margin-bottom:7px">🚌 Touring Coach Fleet — 30+ Vehicles</div><table style="width:100%;border-collapse:collapse;font-size:10px;margin-bottom:12px"><tr style="background:#F0FFF4"><th style="padding:5px 7px;text-align:left;color:#14532D;font-weight:700">Vehicle</th><th style="padding:5px;text-align:center;color:#14532D;font-weight:700">Units</th><th style="padding:5px;text-align:center;color:#14532D;font-weight:700">Pax</th><th style="padding:5px;text-align:center;color:#14532D;font-weight:700">Vintage</th></tr><tr style="border-bottom:1px solid #E5E7EB"><td style="padding:5px 7px;font-weight:700">Higer Scania Touring HD <span style="background:#065F46;color:#fff;font-size:8px;padding:2px 6px;border-radius:99px">FLEET LEADER</span></td><td style="text-align:center;padding:5px;color:#065F46;font-weight:700">14</td><td style="text-align:center;padding:5px">50</td><td style="text-align:center;padding:5px">2025–26</td></tr><tr style="border-bottom:1px solid #E5E7EB;background:#F8FAFC"><td style="padding:5px 7px">Neoplan Tourliner</td><td style="text-align:center;padding:5px;color:#065F46;font-weight:700">4</td><td style="text-align:center;padding:5px">49–57</td><td style="text-align:center;padding:5px">2026</td></tr><tr style="border-bottom:1px solid #E5E7EB"><td style="padding:5px 7px">Mercedes-Benz Tourismo RHD</td><td style="text-align:center;padding:5px;color:#065F46;font-weight:700">4</td><td style="text-align:center;padding:5px">19–51</td><td style="text-align:center;padding:5px">2023–25</td></tr><tr style="border-bottom:1px solid #E5E7EB;background:#F8FAFC"><td style="padding:5px 7px">Temsa 2024 Fleet</td><td style="text-align:center;padding:5px;color:#065F46;font-weight:700">5</td><td style="text-align:center;padding:5px">50–60</td><td style="text-align:center;padding:5px">2024</td></tr><tr><td style="padding:5px 7px">MAN Lions Coach L</td><td style="text-align:center;padding:5px;color:#065F46;font-weight:700">3</td><td style="text-align:center;padding:5px">50–51</td><td style="text-align:center;padding:5px">2014–16</td></tr></table><div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#1E40AF;margin-bottom:7px">🚐 Private Transfer Fleet — 65+ Vehicles · Mercedes-Benz Only</div><table style="width:100%;border-collapse:collapse;font-size:10px"><tr style="background:#EFF6FF"><th style="padding:5px 7px;text-align:left;color:#1E40AF;font-weight:700">Vehicle</th><th style="padding:5px;text-align:center;color:#1E40AF;font-weight:700">Units</th><th style="padding:5px;text-align:center;color:#1E40AF;font-weight:700">Pax</th><th style="padding:5px 7px;text-align:left;color:#1E40AF;font-weight:700">Use Case</th></tr><tr style="border-bottom:1px solid #E5E7EB"><td style="padding:5px 7px;font-weight:700">V-Klasse Long</td><td style="text-align:center;padding:5px;color:#1E40AF;font-weight:700">35+</td><td style="text-align:center;padding:5px">7</td><td style="padding:5px 7px">FIT · Airport · VIP</td></tr><tr style="border-bottom:1px solid #E5E7EB;background:#F8FAFC"><td style="padding:5px 7px">V-Klasse Style</td><td style="text-align:center;padding:5px;color:#1E40AF;font-weight:700">5+</td><td style="text-align:center;padding:5px">6</td><td style="padding:5px 7px">VIP · Luxury FIT</td></tr><tr style="border-bottom:1px solid #E5E7EB"><td style="padding:5px 7px">Vito Tourer</td><td style="text-align:center;padding:5px;color:#1E40AF;font-weight:700">8</td><td style="text-align:center;padding:5px">9</td><td style="padding:5px 7px">Groups · Shuttles</td></tr><tr><td style="padding:5px 7px">Vito Standard</td><td style="text-align:center;padding:5px;color:#1E40AF;font-weight:700">5+</td><td style="text-align:center;padding:5px">9</td><td style="padding:5px 7px">Transfers · Groups</td></tr></table></div>',
+    purpose:"CEO Transport. Direct report to Raj Kumar at same level as Ajay Kawa and Alia Taub. Full management and commercial responsibility for ORN's 96+ vehicle European fleet — touring coaches and private transfers throughout Europe. Owns all B2B transport partnerships, driver operations, fleet maintenance and integration with all BUs (GIT, MICE, FIT, Cruise).",
+    resp:["Full P&L accountability for ORN Transport Division","Fleet management: 14x Higer Scania HD, 4x Neoplan Tourliner, 4x MB Tourismo, 5x Temsa, 3x MAN Lions coach + 65+ Mercedes-Benz private transfer vehicles","Manages all B2B trade partner relationships — Tour Operators, DMCs, Corporate TMCs, Cruise Lines","Drives transport integration with Cruise Division (Skyjet transition) — port transfers and logistics","Coordinates with Clinton Thomas (GIT QC) on ground logistics for all GIT departures","Owns driver compliance — licensing, safety standards, multilingual training","Owns driver float process — issue, tracking, 48hr settlement via LERMS","Ensures ISO 27001 operational compliance across all transport operations","Reports monthly transport P&L and performance to Raj Kumar","Manages fleet refresh strategy — maintains 2024+ vintage across primary fleet"],
+    skills:["Transport and logistics P&L at scale","European coach and private transfer fleet management","Driver operations, compliance and safety","B2B trade partner management (tour operators, DMCs, corporate)","LERMS or equivalent fleet management systems"],
+    qualifications:["Degree in Transport, Logistics, Business or equivalent","8+ years senior transport or fleet management","Experience with European driver compliance and licensing","Track record of B2B commercial relationships in travel transport"],
+    kpis:["On-time departure rate 98%+","Driver float settlement within 48hrs — 100%","Fleet utilisation rate 85%+ during peak season","Client satisfaction (B2B trade) 4.3/5+","Transport cost vs budget — monthly","Fleet vintage maintained 2024+ for primary coaches"],
+    meetings:["Monthly Leadership Review (Raj Kumar)","Weekly Commercial Ops Review (Ajay Kawa)","Monthly transport performance review (self-run)","Quarterly fleet and supplier review","Daily driver ops check","Pre-departure T-7 call with Clinton Thomas (GIT QC)"],
+    alia_note:"Alia to review: CEO Transport competency framework, confirm Transport Division org structure (Transport Director, Fleet Manager, Driver Ops Manager all TBC), define performance review cadence, assess whether transport staff need separate HR framework given driver employment model.",
+  },
+  dhruv:{
+    tag:"CFO — UK & All Regions", name:"Drew (Dhruv) Soni",
+    title:"Chief Financial Officer · UK-based · Consolidated Group Finance",
+    color:"#1E40AF",
+    badges:["Finance","All Regions","UK-based","Reports to Raj Kumar"],
+    reports:"Raj Kumar (Global COO & CEO)",
+    directs:["Finance Manager UK (TBC)","Whitney Palmer (USA — dotted line)","Amey Ghadigaonkar (AU — dotted line)","ME Finance (TBC)"],
+    scope:"Global Finance Coordination · UK-based · All Five Regions",
+    purpose:"UK-based CFO. Direct report to Raj Kumar. Responsible for coordinating monthly consolidated financial reporting from all five regions. Each region manages its own local finance — Drew coordinates the group numbers, produces consolidated management accounts and ensures all regions report on time and accurately to the UK office. Dual role: Head of Finance & Operations in ANZ plus global CFO coordination.",
+    resp:["Coordinates monthly financial reporting from all five regions (UK, Europe, USA, Australia, Middle East)","Produces consolidated management accounts for Raj Kumar — monthly","Manages UK finance and European finance (centralised in UK)","Receives monthly reports from USA (Whitney Palmer) and Australia (Amey Ghadigaonkar)","Oversees payment controls and gate compliance across all regions","Supports UK CFO recruitment — to eventually take the consolidated coordination role permanently","Provides financial modelling and commercial analysis for Raj Kumar's decision-making","Ensures all regions maintain audit-ready books at all times","Manages multi-currency exposure and treasury across AU and USA","Reports financial risks, variances and corrective actions to Raj Kumar monthly"],
+    skills:["CFO experience across multiple jurisdictions — UK, USA and Australia preferred","Consolidated group financial reporting","Multi-currency treasury and FX management","UK, US and Australian accounting standards (IFRS, US GAAP, AASB)","Commercial financial analysis and modelling"],
+    qualifications:["ACA, ACCA, CPA or equivalent qualified accountant","8+ years senior finance leadership","Multi-region CFO or group finance director experience","Big 4 or travel/hospitality sector background preferred"],
+    kpis:["Consolidated monthly close within 5 working days of month end","All five regions reporting on time — 100%","Management accounts accuracy and completeness","Finance compliance across all regions — zero audit issues","UK CFO hired within agreed timeline","Monthly board-ready P&L pack delivered to Raj Kumar"],
+    meetings:["Monthly Leadership Review (Raj Kumar)","Finance coordination calls with each regional contact (weekly during close)","Monthly consolidated management accounts delivery","Quarterly board financial reporting","UK CFO transition planning (once recruited)"],
+    alia_note:"Alia to review: CFO dual-role clarification (AU Head of Finance + Global CFO — is this sustainable?), confirm reporting line for regional finance contacts, agree HR framework for finance staff per region, complete formal JD once UK CFO hired and responsibilities redistributed.",
+  },
+  ken:{
+    tag:"Contracts Manager · UK & Europe", name:"Ken Newton",
+    title:"Hotel & Supplier Contracting — European Portfolio · UK DMO",
+    color:"#C9A84C",
+    badges:["UK & Europe","27+ Hotel Contracts","Field-based","Reports to Ajay Kawa"],
+    reports:"Ajay Kawa (COO UK & Europe)",
+    directs:["Eileen Corrales (Europe Incoming — GM Contracting)","UK DMO Administrator","Contract Processing"],
+    scope:"UK & Europe Hotel Portfolio · 27+ Properties · Field-based",
+    purpose:"Leads all hotel and supplier contracting across the European portfolio. Field-based model — represents ORN directly with hotel partners across Europe. Manages allotments, rate structures, contract terms and the UK DMO team (Administrator and Contract Processing). Central to the product quality and commercial competitiveness of ORN's European GIT programme.",
+    resp:["Manages all European hotel contracting — 27+ properties across Scotland, England, Wales and mainland Europe","Negotiates rates, allotments, contract terms and special conditions with hotel partners","Manages Europe Incoming relationship with Eileen Corrales (GM Contracting)","Oversees UK DMO Administrator (diary, correspondence, office ops)","Oversees Contract Processing (rate loading, system accuracy, India team coordination)","Benchmarks European hotel rates vs market quarterly — ensures competitiveness","Reviews and approves all hotel allotment releases and T-30 confirmations","Ensures all contracts have complete documentation trail — audit ready","Reports contracting performance, renewals pipeline and rate competitiveness to Ajay Kawa monthly","Attends key European hotel industry events and supplier meetings"],
+    skills:["Hotel contracting and rate negotiation — European market","Allotment management and yield optimisation","Supplier relationship management at senior level","Contract administration and loading oversight","European travel product and destination knowledge"],
+    qualifications:["Degree in Business, Hospitality or Tourism preferred","6+ years hotel contracting or European travel product","Strong European hotel network — 3–5 star","Understanding of GIT group allotment structures"],
+    kpis:["Contract renewal rate 95%+ (volume maintained year-on-year)","Rate loading accuracy 99%+ (verified against contracts)","European hotel portfolio competitive vs market benchmark","Allotment utilisation rate — peak season 85%+","Contract coverage — all ORN Europe destinations contracted before programme opens","All contracts audit-ready with complete documentation"],
+    meetings:["Monthly Commercial Review (Ajay Kawa)","Quarterly European supplier review meetings","Weekly loading status call with India fulfilment team","Monthly UK DMO team meeting (Ken chairs)","Ad-hoc hotel property visits and negotiations"],
+    alia_note:"Alia to review: Contracts Manager competency framework, confirm UK DMO team reporting structure (Administrator and Contract Processing line management), agree performance review cadence, assess workload — 27+ contracts across multiple European destinations.",
+  },
+  clinton:{
+    tag:"GIT Quality Control", name:"Clinton Thomas",
+    title:"GIT Support & Quality Control Manager · Pre-Departure · Incoming Tours",
+    color:"#1D4ED8",
+    badges:["UK · Incoming Tours & Ops QC","GIT QC","T-7 Day Gate","Reports to Ajay Kawa"],
+    reports:"Ajay Kawa (COO UK & Europe)",
+    directs:[],
+    scope:"UK & Europe · GIT QC · All Departures · Pre-Departure Gates",
+    purpose:"GIT Support and Quality Control Manager within the UK & Europe DMO. Role established in response to the June 2026 GIT Europe Operational Review (prepared by Ajay Kawa). Owns all pre-departure QC gates, incoming tour coordination and the sign-off authority for all GIT Europe departures. Zero departures without full QC sign-off.",
+    resp:["Owns all pre-departure QC checks — T-30, T-14, T-7 and T-48hr gates for all GIT Europe departures","Manages incoming tour coordination — hotel confirmations, coach allocations, guide briefings, meal requests","Acts as final sign-off authority for all GIT Europe departures before handover to operations","Produces and maintains the group file for every departure — complete and audit-ready","Reviews all group files against the 7-gate QC checklist before T-7","Escalates unresolved QC issues to Ajay Kawa with a recommended resolution","Maintains the GIT QC log and departure tracking dashboard","Coordinates with Ken Newton on hotel booking accuracy and amendment process","Liaises with David Tan and Adonis Iliopoulos on coach and transport allocations for each departure","Provides post-departure QC review — flags recurring issues to ops and product teams for improvement"],
+    skills:["GIT operations and quality control — European group touring","Incoming tour management and pre-departure coordination","Systematic process management — 7-gate QC framework","Attention to detail — zero error tolerance on departure files","Multi-stakeholder coordination: hotels, coaches, guides, airlines"],
+    qualifications:["Travel or Tourism qualification preferred","4+ years GIT operations or group travel experience","Experience in European incoming tour management","Understanding of GIT booking systems and pre-departure processes"],
+    kpis:["T-7 gate sign-off compliance — 100% of all GIT Europe departures","Pre-departure QC error rate — target <1% (errors found after T-7)","Hotel confirmation accuracy — 99%+ confirmed against contracted allotments","QC escalation resolution within 24hrs of escalation to Ajay Kawa","Zero departures operating without full 7-gate QC sign-off","GIT QC dashboard maintained and current at all times"],
+    meetings:["Weekly UK DMO team catch-up (Monday)","T-30 departure review with ops team (weekly)","Monthly GIT QC review with Ajay Kawa","Pre-departure call with Adonis Iliopoulos T-7","Post-departure debrief call (weekly — covers previous week's departures)"],
+    alia_note:"Alia to review: GIT QC Manager competency framework, confirm scope (UK departures only or all European GIT?), assess whether role needs support staff given departure volumes, complete salary benchmarking vs UK travel ops market.",
+  },
+  david:{
+    tag:"Head — Air & Transport", name:"David Tan",
+    title:"Air Product · Group Flights · Cathay Pacific · Transport Integration",
+    color:"#1A73E8",
+    badges:["Global","Group Air","Cathay Pacific","ORN Transport","Reports to Ajay Kawa"],
+    reports:"Ajay Kawa (COO UK & Europe)",
+    directs:["Ticketing Team — India Fulfilment","Transport Coordination (Adonis — dotted line)"],
+    scope:"Global Air Product · Group Blocks · Cathay Pacific Programme · Transport Integration",
+    purpose:"Owns all air and transport product across the Commercial Division. Responsible for group block seat management, PNR processing, Cathay Pacific Indian outbound programme and the integration of ORN Transport (Adonis) and Cruise Division port logistics into the commercial product offering.",
+    resp:["Manages all group air — block seat contracting, PNR processing, international and domestic routes","Owns Cathay Pacific Indian outbound programme (Jul–Nov 2026) with Manish Suchde","Coordinates transport product integration with Adonis Iliopoulos (ORN Transport)","Manages Cruise Division transport coordination — port transfers and logistics (Skyjet/ORN Cruise)","Manages T-30 flight sealing process and group block release procedures","Ensures all flight product is priced, packaged and loaded accurately by India fulfilment team","Maintains airline relationship with Cathay Pacific and explores new airline partnerships","Reports air product performance, block utilisation and cost vs budget to Ajay Kawa","Manages ticketing team in India — quality, accuracy and turnaround time","Coordinates with Clinton Thomas on flight details for all GIT departure files"],
+    skills:["Group air contracting, block management and seat release strategies","PNR and GDS experience — Amadeus, Galileo or Sabre","Transport product integration into tour packages","Airline partnership management and negotiation","Cruise port transfer and logistics coordination"],
+    qualifications:["IATA or airline qualification preferred","5+ years group air or airline-side experience","GDS certification — Amadeus preferred","Understanding of group tour air integration"],
+    kpis:["T-30 flight sealing compliance 98%+ (all blocks sealed or released on time)","Group block utilisation 90%+ (seat wastage <10%)","PNR processing error rate <0.5%","Cathay Pacific programme delivery — revenue vs target Jul–Nov 2026","Air cost vs budget — monthly variance report to Ajay Kawa","India ticketing team turnaround time — within agreed SLA"],
+    meetings:["Weekly air product review (Ajay Kawa)","Monthly Cathay Pacific programme review (Manish Suchde)","T-30 compliance check — weekly (Monday)","Quarterly transport integration review (Adonis Iliopoulos)","Monthly cruise transport coordination (Skyjet/ORN Cruise)"],
+    alia_note:"Alia to review: Head of Air & Transport competency framework, confirm scope clarity between David (air product) and Adonis (ground transport) — overlap on cruise logistics, assess India ticketing team line management arrangements, agree salary benchmarking.",
+  },
+  manish:{
+    tag:"Global Partnerships & DMC", name:"Manish Suchde",
+    title:"Global DMC Partnerships · Cathay Pacific · Macau Tourism",
+    color:"#7C3AED",
+    badges:["Global","Nexus DMC","Cathay Pacific","Macau Tourism","Kerzner","Reports to Ajay Kawa"],
+    reports:"Ajay Kawa (COO UK & Europe)",
+    directs:["Baris Intepe (Turkey/ME — dotted line)","Yukti Kumar (ANZ — dotted line)"],
+    scope:"Global DMC Relationships · Asia Pacific · Middle East · Specialist Product",
+    purpose:"Owns all global DMC relationships and specialist product partnerships. Manages the Nexus DMC Australia relationship (with Yukti Kumar), Cathay Pacific Indian outbound programme (Jul–Nov 2026), Macau Tourism Board collaboration and Kerzner International. Provides the global intelligence layer on product, destination and DMC that feeds into Ken Newton's European contracting and Ajay Kawa's commercial strategy.",
+    resp:["Manages all global DMC relationships — Nexus ANZ, Turkey/ME gateway (Baris), and all active global partners","Owns Cathay Pacific Indian outbound programme (Jul–Nov 2026) — end to end with David Tan","Leads Macau Tourism Board collaboration and product development","Manages Kerzner International relationship and Kerzner-branded product","Oversees Baris Intepe (Turkey & Eastern Med) and coordinates with Yukti Kumar (ANZ product)","Drives the three-phase DMC integration model: Relationship → Static Contract → Direct API","Provides destination and supplier intelligence to Ken Newton for European contracting decisions","Sources new DMC and specialist product opportunities in line with ORN's selective partnership model","Reports global partnership performance to Ajay Kawa monthly","Manages Middle East DMC gateway (Baris) pending ME CEO appointment"],
+    skills:["Global DMC relationship management and partnership structuring","Asia Pacific and Middle East market expertise","Specialist travel product development","Programme management — Cathay Pacific, Macau, Kerzner","Three-phase DMC integration model (Relationship → Static → API)"],
+    qualifications:["Degree in Business, Tourism or International Business","6+ years global DMC or product partnership experience","Asia Pacific and/or Middle East market knowledge","Understanding of API integration in travel distribution preferred"],
+    kpis:["All active DMC partners performing vs SLA — reviewed quarterly","Cathay Pacific programme revenue vs target Jul–Nov 2026","Macau Tourism collaboration milestones on schedule","Kerzner product bookings vs plan","Three-phase DMC integration progress — at least two DMCs in Phase 2 by year end","Global product range breadth — destinations and experiences vs prior year"],
+    meetings:["Monthly Global Partnerships Review (Ajay Kawa)","Quarterly DMC partner reviews (per partner)","Cathay Pacific programme monthly update (David Tan)","Macau Tourism Board quarterly","Nexus ANZ monthly (Yukti Kumar)","Middle East market intelligence update (Baris Intepe — bi-monthly)"],
+    alia_note:"Alia to review: Global Partnerships competency framework, confirm dual management of Baris and Yukti (dotted line to Manish but day-to-day reporting to Sahil/Ajay), assess bandwidth — Cathay + Macau + Kerzner + Nexus + Baris + Yukti is a significant portfolio.",
+  },
+  yukti:{
+    tag:"DMC Lead — ANZ", name:"Yukti Kumar",
+    title:"Product Manager & DMC Lead · Australia & New Zealand · Nexus",
+    color:"#0891B2",
+    badges:["ANZ","Nexus DMC","Asia Pacific","Reports to Sahil / Ajay"],
+    reports:"Sahil Nijhawan (CEO Australia) / Ajay Kawa (dotted line — global product)",
+    directs:["James Gottschalk (Nexus Melbourne)","Product Consultants: Weizhe Lin, Ying Liu"],
+    scope:"ANZ Product · Nexus DMC Partnership · Asia Pacific Intelligence",
+    purpose:"Manages the Nexus DMC Australia relationship and ANZ product development. Reports to Sahil Nijhawan on ANZ operations and to Ajay Kawa on global product coordination (dotted line). Responsible for the breadth, quality and competitiveness of ORN's ANZ product portfolio — tours, experiences, transfers and specialist product.",
+    resp:["Manages Nexus DMC Australia relationship — James Gottschalk (Melbourne) as primary contact","Develops and curates the ANZ touring and product portfolio for ORN","Manages Product Consultants Weizhe Lin and Ying Liu on product development and loading","Sources new ANZ experiences, accommodation and specialist product to enrich the ORN programme","Provides Asia Pacific DMC intelligence and market insight to Manish Suchde (global)","Supports Sahil Nijhawan on ANZ commercial development and agent product training","Coordinates ANZ product loading and QC with India fulfilment team","Provides product briefings and training materials for the ANZ sales team","Reviews Nexus SLA performance quarterly and escalates issues to Sahil Nijhawan","Contributes to three-phase DMC integration model for Nexus (Phase 2 — Static Contract)"],
+    skills:["DMC relationship management — Australia and New Zealand","ANZ travel product knowledge — touring, experiences, accommodation","Asia Pacific market expertise","Product development and curation","Operational coordination with fulfilment teams"],
+    qualifications:["Tourism, Travel or Business degree preferred","4+ years ANZ travel product or DMC experience","Strong Nexus DMC or equivalent product knowledge","Understanding of GIT tour product loading"],
+    kpis:["ANZ product range — destinations and experiences vs prior year","Nexus DMC SLA compliance — reviewed quarterly","Product loading accuracy — 99%+","Weizhe Lin and Ying Liu productivity and output","Asia Pacific supplier pipeline (new products per quarter)","ANZ product satisfaction from sales team"],
+    meetings:["Monthly ANZ product review (Sahil Nijhawan)","Nexus DMC weekly catch-up (James Gottschalk)","Quarterly Asia Pacific review (Manish Suchde)","Monthly ANZ ops review (Sahil Nijhawan)","Product team weekly (Weizhe Lin, Ying Liu)"],
+    alia_note:"Alia to review: DMC Lead ANZ competency framework, clarify dual reporting (Sahil day-to-day, Ajay dotted line — how does this work in practice?), complete JDs for Weizhe Lin and Ying Liu, confirm career pathway for Yukti within growing ANZ structure.",
+  },
+  baris:{
+    tag:"DMC Lead — Turkey & ME Gateway", name:"Baris Intepe",
+    title:"Turkey · Eastern Mediterranean · Middle East Gateway",
+    color:"#D97706",
+    badges:["Turkey","Eastern Med","ME Gateway","Reports to Ajay / Manish"],
+    reports:"Ajay Kawa (COO) / Manish Suchde (Global Partnerships — dotted line)",
+    directs:[],
+    scope:"Turkey · Eastern Mediterranean · Middle East Market Development Gateway",
+    purpose:"Manages ORN's Turkey and Eastern Mediterranean DMC relationships and acts as the commercial gateway for Middle East market development pending the ME CEO appointment. Provides product intelligence on Turkey, Eastern Med and the wider MENA region to Manish Suchde — and is the key relationship holder that will brief and support the incoming Middle East CEO on regional dynamics.",
+    resp:["Manages all Turkey and Eastern Mediterranean DMC supplier relationships","Sources and qualifies new suppliers across Eastern Med, Turkey and wider MENA region","Develops Turkey and Eastern Med product portfolio — tours, experiences and specialist product","Acts as Middle East gateway — builds market intelligence pack for incoming ME CEO","Provides regular market intelligence reports on Turkey and ME to Manish Suchde","Supports commercial negotiations for Turkey/ME contracts and rate structures","Attends Turkish travel trade events and represents ORN in the region","Coordinates with Manish Suchde on three-phase DMC integration for Turkey suppliers","Briefs ME CEO (once appointed) on regional DMC landscape and existing relationships","Manages ORN's Turkey-based operational requirements for GIT and FIT departures"],
+    skills:["Turkey and Eastern Mediterranean travel expertise","DMC relationship management — supplier qualification and contracting","MENA market knowledge and commercial insight","Turkish language — preferred","Commercial negotiation and product development"],
+    qualifications:["Degree in Tourism, Business or equivalent","4+ years Turkey or Eastern Med travel product experience","Strong regional DMC and supplier network","Arabic or Turkish language skills an advantage"],
+    kpis:["Turkey and Eastern Med product range — destinations and experiences","DMC partner satisfaction — reviewed bi-annually","ME market intelligence report delivered bi-monthly","New supplier qualification pipeline (minimum 3 per quarter)","Turkey product bookings vs prior year","ME CEO briefing pack ready for appointment"],
+    meetings:["Monthly partnership review (Manish Suchde)","Bi-monthly Middle East market intelligence update","Quarterly Eastern Med supplier reviews","Turkey trade event attendance (bi-annual)","ME CEO handover briefing (once appointed)"],
+    alia_note:"Alia to review: Turkey/ME Gateway competency framework and JD — currently a generalist product role but needs formal structure, confirm reporting line clarity (Ajay COO vs Manish dotted line), agree salary benchmarking for Turkey market, plan ME CEO transition of Baris responsibilities.",
+  },
+  tag:{
+    tag:"B2B & Credits · TAG", name:"Kerryn & Linda",
+    title:"Travel Answers Group · Global B2B Agent Network & Credits",
+    color:"#C9A84C",
+    badges:["Travel Answers Group","Global B2B","Credits","USA & Global","Reports to Ajay Kawa"],
+    reports:"Ajay Kawa (COO UK & Europe)",
+    directs:["TAG Agent Network — operational","Credits Operations Team"],
+    scope:"Global B2B Agent Network · Travel Credits Programme · TAG Partnership",
+    purpose:"Leads the Travel Answers Group (TAG) commercial and operational relationship — ORN's primary B2B agent network partner globally. Manages the global trade agent relationships, the TripFactory/ORN travel credits programme, and the ATE 2026 trade event strategy. Central to the B2B revenue channel across all regions.",
+    resp:["Manages TAG commercial and operational relationship with ORN UK — all contractual and day-to-day matters","Owns travel credits programme — issuance, redemption, reconciliation and reporting","Builds and develops the global B2B agent network through the TAG platform","Provides agent sales support, commercial briefings and product training materials","Manages credits balance reporting and monthly reconciliation to Ajay Kawa","Coordinates TAG's ATE 2026 trade event participation and follow-up strategy","Activates new agents through TAG onboarding process","Reports B2B agent performance metrics and credits utilisation to Ajay Kawa monthly","Liaises with Denise Schmeideknecht (USA Product — Europe) on agent product knowledge","Feeds B2B intelligence into Manish Suchde for global product sourcing priorities"],
+    skills:["B2B travel agent network management","Travel credits and loyalty programme design and operations","Commercial partnership development and account management","Travel trade event strategy (ATE and equivalents)","Agent activation and business development"],
+    qualifications:["Travel or Business degree preferred","5+ years B2B travel agent network management","Understanding of credits/loyalty commercial models in travel","Strong travel trade network — agents, consortia and TMCs"],
+    kpis:["B2B agent network size — active agents vs target","Agent activation rate — agents who have booked within 90 days","Credits utilisation rate 70%+","Credits processing accuracy 99.5%+","Agent satisfaction score (quarterly survey)","Revenue generated through TAG B2B channel vs plan"],
+    meetings:["Monthly Commercial Review (Ajay Kawa)","Quarterly TAG strategy and commercial review","Monthly credits reconciliation","Agent network quarterly business reviews","ATE 2026 planning and debrief sessions"],
+    alia_note:"Alia to review: TAG partnership JD structure — Kerryn and Linda operate as a joint function. Alia to formalise: individual JDs for Kerryn and Linda, reporting and accountability clarity, credits programme HR/compliance framework, TAG contract renewal terms HR implications.",
+  },
+  me_ceo:{
+    tag:"CEO — Middle East · TBC", name:"TBC",
+    title:"Chief Executive Officer · GCC & MENA Region",
+    color:"#D97706",
+    badges:["GCC","MENA","Role TBC — Recruiting","Reports to Raj Kumar"],
+    reports:"Raj Kumar (Global COO & CEO)",
+    directs:["ME Sales Manager (TBC)","ME Ops Manager (TBC)","ME Finance (TBC)","Baris Intepe (Turkey/ME — handover from Manish)"],
+    scope:"Middle East · GCC · MENA · Full Regional P&L",
+    purpose:"CEO for the Middle East and GCC/MENA region. To be recruited. Will report directly to Raj Kumar at the same level as Ajay Kawa, Alia Taub and other regional CEOs. Baris Intepe currently acting as Turkey/ME commercial gateway, building the market intelligence and supplier foundation that this CEO will inherit.",
+    resp:["Full P&L accountability for the GCC and MENA region","Build ORN commercial presence in UAE, Saudi Arabia, Qatar and wider GCC","Inherit and manage Baris Intepe's Turkey/ME relationships post-appointment","Develop and execute Middle East go-to-market strategy","Source and manage regional DMC and supplier relationships","Build the ME team — initially ME Sales Manager, Ops Manager and Finance","Develop a GCC and MENA travel agent and corporate travel network","Report monthly P&L and market development milestones to Raj Kumar","Ensure compliance with GCC and MENA regulatory requirements","Work with Alia Taub on ME people and HR framework"],
+    skills:["CEO or VP-level experience in GCC/MENA travel or hospitality","Arabic language — preferred","GCC travel distribution — agents, DMCs, corporate TMCs","Commercial and regional P&L management","MENA regulatory and compliance environment"],
+    qualifications:["Degree in Business, Hospitality or equivalent","8+ years senior leadership in GCC/MENA travel","Proven P&L at regional level","Strong GCC industry network — agents, luxury travel, corporate"],
+    kpis:["ME Revenue — Year 1 target TBC (to be set by Raj Kumar)","GCC agent network launched — agents active within 6 months","Regional DMC partnerships established — minimum 3 by end of Year 1","ME market brand presence — trade events attended, partnerships signed","ME team built — Sales Manager, Ops Manager and Finance all hired within 90 days"],
+    meetings:["Monthly Leadership Review (Raj Kumar — once appointed)","Weekly ME Ops Review (self-run)","Quarterly strategy session with Raj Kumar","Baris Intepe handover meetings (post-appointment)","ME team weekly catch-up"],
+    alia_note:"Alia to design: full ME CEO JD and competency framework for use in recruitment, salary benchmarking for GCC CEO market, HR framework for Middle East region (labour law, visa, employment contracts), onboarding plan for incoming ME CEO.",
+  },
 };
+
 
 function openModal(key){
   const p=PROFILES[key]; if(!p)return;
@@ -1100,20 +2043,29 @@ function openModal(key){
   document.getElementById('mName').textContent=p.name;
   document.getElementById('mTitle').textContent=p.title;
   document.getElementById('mBadges').innerHTML=(p.badges||[]).map(function(b){return'<span class="mhb">'+b+'</span>';}).join('');
-  const dr=p.directs&&p.directs.length>0?'<div class="rep-chips">'+p.directs.map(function(d){return'<span class="rep-chip">'+d+'</span>';}).join('')+'</div>':'<span style="font-size:10px;color:var(--muted)">No direct reports listed</span>';
+  const dr=p.directs&&p.directs.length>0?'<div class="rep-chips">'+p.directs.map(function(d){return'<span class="rep-chip">'+d+'</span>';}).join('')+'</div>':'<span style="font-size:11px;color:var(--muted)">No direct reports listed</span>';
   const ri=(items,col)=>(items||[]).map(function(r,i){return'<div class="ms-item"><span class="ms-bul" style="color:'+col+'">'+(i+1)+'.</span><span>'+r+'</span></div>';}).join('');
   const bi=(items,col)=>(items||[]).map(function(r){return'<div class="ms-item"><span class="ms-bul" style="color:'+col+'">✓</span><span>'+r+'</span></div>';}).join('');
   const ki=(items)=>(items||[]).map(function(k){return'<div class="krow"><div class="k-metric">'+k+'</div></div>';}).join('');
   const mi=(items)=>(items||[]).map(function(m){return'<div class="ms-item"><span class="ms-bul" style="color:#888">▸</span><span>'+m+'</span></div>';}).join('');
+  const qi=(items)=>(items||[]).map(function(q){return'<div class="ms-item"><span class="ms-bul" style="color:#6B6B6B">◈</span><span>'+q+'</span></div>';}).join('');
   const fleet=p.fleet_detail?'<div class="ms"><div class="ms-title">🚌 Fleet Under Management</div>'+p.fleet_detail+'</div>':'';
+  const scopeHtml=p.scope?'<div style="font-size:10.5px;font-weight:700;color:var(--text);background:var(--off);border-radius:6px;padding:7px 11px;margin-bottom:8px">📐 Scope: '+p.scope+'</div>':'';
+  const qualsHtml=p.qualifications&&p.qualifications.length?'<div class="ms"><div class="ms-title">🎓 Qualifications &amp; Experience Required</div>'+qi(p.qualifications)+'</div>':'';
+  const aliaHtml=p.alia_note?'<div style="background:#FEF3C7;border:1.5px solid #FCD34D;border-left:4px solid #D97706;border-radius:8px;padding:12px 14px;margin-bottom:10px"><div style="display:flex;align-items:center;gap:7px;margin-bottom:6px"><span style="font-size:16px">⭐</span><div style="font-size:10px;font-weight:800;color:#92400E;text-transform:uppercase;letter-spacing:.1em">Alia Taub — For Review &amp; Action</div></div><div style="font-size:11px;color:#78350F;line-height:1.65">'+p.alia_note+'</div></div>':'';
   document.getElementById('modalBody').innerHTML=
-    '<div class="ms"><div class="ms-title">🎯 Role Purpose</div><div class="ms-body" style="border-color:'+p.color+'">'+p.purpose+'</div></div>'+
-    '<div class="ms"><div class="ms-title">🔗 Reporting</div><div class="rep-to">↑ Reports to: '+p.reports+'</div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:7px">Direct Reports</div>'+dr+'</div>'+
+    aliaHtml+
+    '<div class="ms"><div class="ms-title">🎯 Role Purpose &amp; Scope</div>'+scopeHtml+'<div class="ms-body" style="border-color:'+p.color+'">'+p.purpose+'</div></div>'+
+    '<div class="ms"><div class="ms-title">🔗 Reporting Structure</div><div class="rep-to">↑ Reports to: '+p.reports+'</div><div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:7px">Direct Reports</div>'+dr+'</div>'+
     '<div class="ms-2">'+
-    '<div class="ms"><div class="ms-title">📋 Responsibilities</div>'+ri(p.resp,p.color)+'</div>'+
-    '<div><div class="ms"><div class="ms-title">⚡ Skills</div>'+bi(p.skills,p.color)+'</div><div class="ms"><div class="ms-title">📅 Meetings</div>'+mi(p.meetings)+'</div></div>'+
+    '<div class="ms"><div class="ms-title">📋 Key Responsibilities</div>'+ri(p.resp,p.color)+'</div>'+
+    '<div>'+
+      '<div class="ms"><div class="ms-title">⚡ Skills &amp; Competencies</div>'+bi(p.skills,p.color)+'</div>'+
+      qualsHtml+
+      '<div class="ms"><div class="ms-title">📅 Meetings &amp; Cadence</div>'+mi(p.meetings)+'</div>'+
     '</div>'+
-    '<div class="ms"><div class="ms-title">📊 KPIs</div>'+ki(p.kpis)+'</div>'+
+    '</div>'+
+    '<div class="ms"><div class="ms-title">📊 KPIs &amp; Performance Metrics</div>'+ki(p.kpis)+'</div>'+
     fleet;
   var _m=document.getElementById('the360Modal');if(_m)_m.classList.add('open');
   document.body.style.overflow='hidden';
