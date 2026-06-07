@@ -22,7 +22,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 .hdr-right{font-size:9px;font-weight:600;color:#fff;letter-spacing:.08em;text-transform:uppercase;position:absolute;right:36px;top:50%;transform:translateY(-50%)}
 
 /* TAB NAV */
-.tab-nav{background:#fff;border-bottom:1.5px solid var(--border);display:flex;justify-content:center;padding:0 28px;position:sticky;top:54px;z-index:190;overflow-x:auto;gap:0}
+.tab-nav{background:#fff;border-bottom:1.5px solid var(--border);display:flex;justify-content:center;padding:0;position:sticky;top:54px;z-index:190;overflow-x:auto;gap:0}
 .tab-btn{padding:13px 18px;font-size:11.5px;font-weight:600;cursor:pointer;border:none;background:none;font-family:inherit;color:var(--muted);border-bottom:2.5px solid transparent;margin-bottom:-1.5px;transition:all .15s;white-space:nowrap;letter-spacing:.01em}
 .tab-btn:hover{color:var(--text)}
 .tab-btn.active{font-weight:700;border-bottom-color:var(--blk);color:var(--blk)}
@@ -37,7 +37,8 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 
 /* PAGE */
 .page{max-width:1100px;margin:0 auto;padding:32px 28px}
-.slbl{font-size:8.5px;font-weight:800;text-transform:uppercase;letter-spacing:.2em;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:12px}
+.slbl{font-size:8.5px;font-weight:800;text-transform:uppercase;letter-spacing:.2em;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:12px;justify-content:center;text-align:center}
+.slbl::before{content:"";flex:1;height:1px;background:var(--border)}
 .slbl::after{content:"";flex:1;height:1px;background:var(--border)}
 
 /* ORG CHART */
@@ -56,51 +57,51 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 .oc.ceo .oc-rep{border-top-color:rgba(255,255,255,.12);color:#fff}
 
 /* 360 CARDS */
-.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:9px;justify-items:stretch}
-.tcard{background:var(--white);border:1.5px solid var(--border);border-radius:10px;overflow:hidden;cursor:pointer;transition:all .15s}
+.team-grid{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:flex-start}
+.tcard{background:var(--white);border:1.5px solid var(--border);border-radius:10px;overflow:hidden;cursor:pointer;transition:all .15s;width:210px;flex-shrink:0}
 .tcard:hover{border-color:#999;box-shadow:0 4px 16px rgba(0,0,0,.07);transform:translateY(-1px)}
 .tcard-accent{height:3px}
 .tcard-body{padding:11px 13px}
 .tcard-tag{font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:3px}
 .tcard-name{font-size:13.5px;font-weight:800;color:var(--text);margin-bottom:1px;line-height:1.2}
 .tcard-title{font-size:9px;color:var(--mid);line-height:1.4;margin-bottom:6px}
-.chip-row{display:flex;flex-wrap:wrap;gap:3px;margin:5px 0}
+.chip-row{display:flex;flex-wrap:wrap;gap:3px;margin:5px 0;justify-content:center}
 .chip{font-size:7px;font-weight:700;padding:1px 6px;border-radius:99px}
 .tcard-reports{font-size:9px;color:var(--muted);padding-top:6px;border-top:1px solid var(--border)}
-.tcard-foot{padding:7px 13px;background:var(--off);font-size:8px;font-weight:600;color:var(--muted);display:flex;align-items:center;justify-content:space-between}
+.tcard-foot{padding:7px 13px;background:var(--off);font-size:9px;font-weight:600;color:var(--muted);display:flex;align-items:center;justify-content:space-between}
 .open-lbl{color:var(--blk);font-weight:700}
 .tcard.tbc-card{border-style:dashed}
 
 /* STAT GRID */
-.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;margin:5px 0}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;margin:5px 0;justify-content:center}
 .stat-box{border-radius:4px;padding:4px;text-align:center}
 .stat-n{font-size:11px;font-weight:800;color:#fff}
 .stat-l{font-size:6px;color:#f0f0f0;text-transform:uppercase;letter-spacing:.06em}
 
 /* INFO PANELS */
-.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px}
-.info-card{background:var(--off);border:1px solid var(--border);border-radius:8px;padding:14px 16px}
+.info-grid{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px;justify-content:center}
+.info-card{background:var(--off);border:1px solid var(--border);border-radius:8px;padding:14px 16px;min-width:280px;flex:1;max-width:520px}
 .info-card.dark{background:var(--blk);border-color:#222;color:#fff}
 .info-title{font-size:10px;font-weight:800;color:var(--text);margin-bottom:4px}
 .info-card.dark .info-title{color:#fff}
 .info-body{font-size:9px;color:var(--mid);line-height:1.65}
 .info-card.dark .info-body{color:#999}
-.info-pills{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+.info-pills{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px;justify-content:center}
 .ipill{font-size:8px;font-weight:700;padding:2px 9px;border-radius:99px}
 .ipill-dark{background:rgba(255,255,255,.1);color:#ddd;border:1px solid rgba(255,255,255,.15)}
 .ipill-gold{background:rgba(201,168,76,.15);color:var(--gold2);border:1px solid rgba(201,168,76,.3)}
 .ipill-light{background:#fff;color:var(--text);border:1px solid var(--border)}
 
 /* REGION BANNERS */
-.reg-banner{padding:20px 28px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:14px}
+.reg-banner{padding:22px 28px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:14px;text-align:center}
 .reg-flag{font-size:28px}
-.reg-name{font-size:18px;font-weight:800;color:var(--blk);margin-bottom:2px}
-.reg-sub{font-size:9.5px;color:var(--mid)}
+.reg-name{font-size:20px;font-weight:800;color:var(--blk);margin-bottom:3px;text-align:center}
+.reg-sub{font-size:9.5px;color:var(--mid);text-align:center}
 .reg-leader{font-size:10px;font-weight:700;color:var(--blk)}
 
 /* Function cards */
-.fn-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:8px;margin-bottom:24px}
-.fn{background:var(--off);border:1px solid var(--border);border-top:2.5px solid var(--blk);border-radius:8px;padding:12px 10px;text-align:center}
+.fn-grid{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;justify-content:center}
+.fn{background:var(--off);border:1px solid var(--border);border-top:2.5px solid var(--blk);border-radius:8px;padding:12px 10px;text-align:center;width:160px;flex-shrink:0}
 .fn-ico{font-size:16px;margin-bottom:4px}
 .fn-n{font-size:10px;font-weight:800;color:var(--text);margin-bottom:2px}
 .fn-d{font-size:9px;color:var(--muted);line-height:1.4}
@@ -121,11 +122,11 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 .mh-tag{font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;margin-bottom:4px;opacity:.75}
 .mh-name{font-size:20px;font-weight:800;margin-bottom:2px}
 .mh-title{font-size:10px;opacity:.82;margin-bottom:7px}
-.mh-badges{display:flex;flex-wrap:wrap;gap:5px}
+.mh-badges{display:flex;flex-wrap:wrap;gap:5px;justify-content:center}
 .mhb{font-size:8px;font-weight:700;padding:2px 9px;border-radius:99px;background:rgba(255,255,255,.18);color:#fff}
 .modal-body{padding:18px 22px 22px;background:var(--off)}
 .ms{background:var(--white);border-radius:8px;border:1px solid var(--border);padding:13px 15px;margin-bottom:10px}
-.ms-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ms-2{display:grid;grid-template-columns:1fr 1fr;gap:10px;justify-content:center}
 .ms-title{font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:8px}
 .ms-body{font-size:11px;color:var(--text);line-height:1.65;background:var(--off);border-left:3px solid;padding:8px 12px;border-radius:0 5px 5px 0}
 .ms-item{font-size:10.5px;color:var(--text);line-height:1.5;display:flex;gap:7px;padding:4px 0;border-bottom:1px solid #f0f0f0}
@@ -136,7 +137,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 .k-metric{font-size:10.5px;font-weight:700;color:var(--text);margin-bottom:1px}
 .k-target{font-size:8px;color:var(--mid)}
 .rep-to{background:#F0FFF4;border:1px solid #86EFAC;border-radius:5px;padding:7px 11px;font-size:10px;font-weight:600;color:#14532D;margin-bottom:8px}
-.rep-chips{display:flex;flex-wrap:wrap;gap:5px}
+.rep-chips{display:flex;flex-wrap:wrap;gap:5px;justify-content:center}
 .rep-chip{font-size:8.5px;font-weight:600;padding:2px 9px;border-radius:5px;background:var(--off);border:1px solid var(--border);color:var(--text)}
 
 /* Footer */
@@ -157,14 +158,16 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 
 <!-- TAB NAV -->
 <div class="tab-nav">
-  <button class="tab-btn active" onclick="switchTab('overview',this)">Global Overview (Excl. India)</button>
-  <button class="tab-btn" onclick="switchTab('uk',this)">UK</button>
-  <button class="tab-btn" onclick="switchTab('europe',this)">Europe</button>
-  <button class="tab-btn" onclick="switchTab('usa',this)">USA</button>
-  <button class="tab-btn" onclick="switchTab('australia',this)">Australia</button>
-  <button class="tab-btn" onclick="switchTab('middleeast',this)">Middle East</button>
-  <button class="tab-btn" onclick="switchTab('tech',this)">Tech Stack</button>
-  <button class="tab-btn" onclick="switchTab('jobs',this)">Job &amp; Role Descriptions</button>
+  <div style="display:flex;justify-content:center;min-width:100%">
+    <button class="tab-btn active" onclick="switchTab('overview',this)">Global Overview (Excl. India)</button>
+    <button class="tab-btn" onclick="switchTab('uk',this)">UK</button>
+    <button class="tab-btn" onclick="switchTab('europe',this)">Europe</button>
+    <button class="tab-btn" onclick="switchTab('usa',this)">USA</button>
+    <button class="tab-btn" onclick="switchTab('australia',this)">Australia</button>
+    <button class="tab-btn" onclick="switchTab('middleeast',this)">Middle East</button>
+    <button class="tab-btn" onclick="switchTab('tech',this)">Tech Stack</button>
+    <button class="tab-btn" onclick="switchTab('jobs',this)">Job &amp; Role Descriptions</button>
+  </div>
 </div>
 
 <!-- ════ OVERVIEW ══════════════════════════════════════════════════ -->
@@ -172,13 +175,13 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
   <div class="banner" style="background:var(--blk)">
     <div class="banner-kicker" style="color:var(--gold);text-align:center">ORN Commercial Division · Ring-Fenced Structure · 2026</div>
     <div class="banner-h" style="color:#fff;text-align:center">Five regions. One commercial vision.</div>
-    <div class="banner-body" style="color:#8a9ab0">UK · Europe · USA · Australia · Middle East — under one commercial leadership team, each region running its own operations and finance. Product contracting is global. People and commercial leadership are centralised. Cruise division operating through UK.</div>
+    <div class="banner-body" style="color:#fff;text-align:center;margin:0 auto;max-width:800px">UK · Europe · USA · Australia · Middle East — under one commercial leadership team, each region running its own operations and finance. Product contracting is global. People and commercial leadership are centralised. Cruise division operating through UK.</div>
   </div>
   <div class="page">
 
     <!-- RAJ at top -->
     <div class="slbl">Chief Executive</div>
-    <div style="display:flex;justify-content:center;gap:10px;margin-bottom:0">
+    <div style="display:flex;justify-content:center;gap:10px;margin-bottom:0;width:100%">
       <!-- Global COO role -->
       <div class="oc ceo" style="min-width:240px">
         <div class="oc-tag" style="color:#ddd;font-size:8px;letter-spacing:.14em">ROLE 1</div>
@@ -198,11 +201,11 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
         <div class="oc-rep">Reports to: TBC</div>
       </div>
     </div>
-    <div style="display:flex;justify-content:center"><div class="vl"></div></div>
+    <div style="display:flex;justify-content:center;width:100%"><div class="vl"></div></div>
 
     <!-- Direct reports row -->
     <div class="slbl">Direct Reports to Raj Kumar</div>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:28px">
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(140px,1fr));gap:8px;margin-bottom:28px;justify-content:center">
       <div class="oc dr" style="border-top:2.5px solid var(--blk)"><div class="oc-tag" style="color:var(--muted)">COO — UK &amp; Europe</div><div class="oc-name">Ajay Kawa</div><div class="oc-title" style="color:var(--mid)">UK &amp; Europe Operations</div><div class="oc-rep" style="color:var(--muted)">↑ Raj Kumar</div></div>
       <div class="oc dr" style="border-top:2.5px solid #15803D"><div class="oc-tag" style="color:var(--muted)">Global CPO</div><div class="oc-name">Alia Taub</div><div class="oc-title" style="color:var(--mid)">People · Training · BD · Global</div><div class="oc-rep" style="color:var(--muted)">↑ Raj Kumar</div></div>
       <div class="oc dr" style="border-top:2.5px solid #D97706"><div class="oc-tag" style="color:var(--muted)">CEO — USA</div><div class="oc-name">Kirk Demeter</div><div class="oc-title" style="color:var(--mid)">North America</div><div class="oc-rep" style="color:var(--muted)">↑ Raj Kumar</div></div>
@@ -217,7 +220,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     <div class="slbl" style="margin-top:28px">Centralised Functions, Finance &amp; Structure</div>
 
     <!-- Row 1: Centralised Roles | Finance | Skyjet -->
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:10px">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:10px;justify-content:center">
 
       <!-- Box 1: Globally Centralised Roles -->
       <div style="background:var(--blk);border-radius:10px;padding:18px 20px;border:1px solid #222;display:flex;flex-direction:column">
@@ -293,7 +296,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
           </div>
         </div>
         <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:6px">Cruise Functions</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:10px;flex:1">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:10px;flex:1;justify-content:center">
           <div style="background:var(--off);border-radius:5px;padding:7px 9px"><div style="font-size:9px;font-weight:700">🎟️ Reservations</div><div style="color:var(--muted);font-size:8px;margin-top:2px">All bookings → UK · Skyjet/ORN system</div></div>
           <div style="background:var(--off);border-radius:5px;padding:7px 9px"><div style="font-size:9px;font-weight:700">🚢 Product</div><div style="color:var(--muted);font-size:8px;margin-top:2px">Global contracting · Cruise lines · Ports</div></div>
           <div style="background:var(--off);border-radius:5px;padding:7px 9px"><div style="font-size:9px;font-weight:700">🚌 Transfers</div><div style="color:var(--muted);font-size:8px;margin-top:2px">David Tan · Adonis fleet · Port logistics</div></div>
@@ -309,7 +312,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     </div>
 
     <!-- Row 2: DMC Strategy | Open Items | Sales Data -->
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:24px">
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:24px;justify-content:center">
 
       <!-- Box 4: DMC Strategy -->
       <div style="background:#fff;border-radius:10px;padding:18px 20px;border:1.5px solid var(--border);display:flex;flex-direction:column">
@@ -408,7 +411,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     <!-- Leadership -->
     <div class="slbl">UK Leadership</div>
     <div style="margin-bottom:24px">
-      <div class="team-grid" style="grid-template-columns:repeat(auto-fill,minmax(220px,1fr))">
+      <div class="team-grid" style="">
         <div class="tcard" onclick="openModal('ajay')">
           <div class="tcard-accent" style="background:#111"></div>
           <div class="tcard-body">
@@ -428,7 +431,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 
     <!-- UK Commercial Team -->
     <div class="slbl">UK Commercial Team</div>
-    <div class="team-grid" style="margin-bottom:24px">
+    <div class="team-grid" style="margin-bottom:24px;justify-content:center">
       <div class="tcard" onclick="openModal('ken')">
         <div class="tcard-accent" style="background:#C9A84C"></div>
         <div class="tcard-body">
@@ -489,7 +492,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 
     <!-- UK Central Functions -->
     <div class="slbl">UK DMO — Central Functions</div>
-    <div class="team-grid" style="margin-bottom:24px">
+    <div class="team-grid" style="margin-bottom:24px;justify-content:center">
       <div class="tcard" style="cursor:default">
         <div class="tcard-accent" style="background:#1A73E8"></div>
         <div class="tcard-body">
@@ -597,7 +600,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
       <div class="fn"><div class="fn-ico">💰</div><div class="fn-n">Finance Hub</div><div class="fn-d">Centralised for Europe. UK CFO coordinating.</div></div>
     </div>
     <div class="slbl">Key Partners — UK</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px;justify-content:center">
       <div class="info-card"><div class="info-title">Europe Incoming</div><div class="info-body">Primary European DMC partner. Eileen Corrales as GM Contracting. Managed by Ken Newton. 27 hotel properties across Scotland, England, Wales.</div></div>
       <div class="info-card"><div class="info-title">TAG — Travel Answers Group</div><div class="info-body">B2B agent network and credits programme. Kerryn &amp; Linda. Global B2B interface with UK as primary commercial contact.</div></div>
     </div>
@@ -614,7 +617,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
         </div>
         <div style="background:#FEF3C7;border:1px solid #FCD34D;border-radius:8px;padding:10px 14px;font-size:9px;font-weight:700;color:#92400E">⚠️ Action — Raj Kumar</div>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:10px">
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:10px;justify-content:center">
         <div style="background:var(--off);border-radius:8px;padding:12px;border:1px solid var(--border)">
           <div style="font-size:10px;font-weight:800;color:var(--text);margin-bottom:4px">🇬🇧 UK</div>
           <div style="font-size:8.5px;color:var(--mid);line-height:1.5;margin-bottom:8px">No dedicated resource. Brand and product marketing to be assigned.</div>
@@ -657,10 +660,76 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     </div>
   </div>
   <div class="page">
-    <div class="slbl">European Team</div>
-    <div class="team-grid" style="margin-bottom:24px">
-      <div class="tcard" onclick="openModal('raj')"><div class="tcard-accent" style="background:linear-gradient(90deg,#C9A84C,#0a0a0a)"></div><div class="tcard-body"><div class="tcard-tag">CEO Europe</div><div class="tcard-name">Raj Kumar</div><div class="tcard-title">CEO UK, Europe & USA</div><div class="tcard-reports">&#8593; TBC</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div><div class="tcard" onclick="openModal('adonis')"><div class="tcard-accent" style="background:#065F46"></div><div class="tcard-body"><div class="tcard-tag">CEO Transport</div><div class="tcard-name">Adonis Iliopoulos</div><div class="tcard-title">ORN Transport · 96+ Fleet</div><div class="stat-grid"><div class="stat-box" style="background:#065F46"><div class="stat-n">96+</div><div class="stat-l">Fleet</div></div><div class="stat-box" style="background:#065F46"><div class="stat-n">30+</div><div class="stat-l">Coaches</div></div><div class="stat-box" style="background:#065F46"><div class="stat-n">65+</div><div class="stat-l">Transfers</div></div><div class="stat-box" style="background:#065F46"><div class="stat-n">ISO</div><div class="stat-l">27001</div></div></div><div class="tcard-reports">&#8593; Raj Kumar</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div><div class="tcard" onclick="openModal('ken')"><div class="tcard-accent" style="background:#C9A84C"></div><div class="tcard-body"><div class="tcard-tag">Hotel Contracting</div><div class="tcard-name">Ken Newton</div><div class="tcard-title">European Hotel Portfolio</div><div class="tcard-reports">&#8593; Ajay Kawa</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div><div class="tcard" onclick="openModal('baris')"><div class="tcard-accent" style="background:#D97706"></div><div class="tcard-body"><div class="tcard-tag">Turkey & ME Gateway</div><div class="tcard-name">Baris Intepe</div><div class="tcard-title">Turkey · Eastern Med</div><div class="tcard-reports">&#8593; Ajay / Manish</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div>
+
+    <!-- Europe Senior Leadership Row -->
+    <div class="slbl">Europe Senior Leadership</div>
+    <div class="team-grid" style="margin-bottom:16px;justify-content:center">
+      <div class="tcard" onclick="openModal('raj')" style="width:240px">
+        <div class="tcard-accent" style="background:linear-gradient(90deg,#C9A84C,#0a0a0a)"></div>
+        <div class="tcard-body">
+          <div class="tcard-tag">CEO — Europe</div>
+          <div class="tcard-name">Raj Kumar</div>
+          <div class="tcard-title">Global COO &amp; CEO · UK, Europe, USA, Australia &amp; Middle East</div>
+          <div class="tcard-reports">&#8593; TBC</div>
+        </div>
+        <div class="tcard-foot"><span>Global COO/CEO</span><span class="open-lbl">Open 360 &#8599;</span></div>
+      </div>
+      <div class="tcard" onclick="openModal('ajay')" style="width:240px">
+        <div class="tcard-accent" style="background:#111"></div>
+        <div class="tcard-body">
+          <div class="tcard-tag">COO — UK &amp; Europe</div>
+          <div class="tcard-name">Ajay Kawa</div>
+          <div class="tcard-title">Chief Operating Officer · UK &amp; Europe Operations</div>
+          <div class="tcard-reports">&#8593; Raj Kumar</div>
+        </div>
+        <div class="tcard-foot"><span>17 Hanover Square</span><span class="open-lbl">Open 360 &#8599;</span></div>
+      </div>
     </div>
+
+    <!-- European Team -->
+    <div class="slbl">European Team</div>
+    <div class="team-grid" style="margin-bottom:24px;justify-content:center">
+      <div class="tcard" onclick="openModal('adonis')">
+        <div class="tcard-accent" style="background:#065F46"></div>
+        <div class="tcard-body">
+          <div class="tcard-tag">CEO Transport</div>
+          <div class="tcard-name">Adonis Iliopoulos</div>
+          <div class="tcard-title">ORN Transport · 96+ Fleet</div>
+          <div class="stat-grid"><div class="stat-box" style="background:#065F46"><div class="stat-n">96+</div><div class="stat-l">Fleet</div></div><div class="stat-box" style="background:#065F46"><div class="stat-n">30+</div><div class="stat-l">Coaches</div></div><div class="stat-box" style="background:#065F46"><div class="stat-n">65+</div><div class="stat-l">Transfers</div></div><div class="stat-box" style="background:#065F46"><div class="stat-n">ISO</div><div class="stat-l">27001</div></div></div>
+          <div class="tcard-reports">&#8593; Raj Kumar</div>
+        </div>
+        <div class="tcard-foot"><span>London/Europe</span><span class="open-lbl">Open 360 &#8599;</span></div>
+      </div>
+      <div class="tcard" onclick="openModal('ken')">
+        <div class="tcard-accent" style="background:#C9A84C"></div>
+        <div class="tcard-body">
+          <div class="tcard-tag">Hotel Contracting</div>
+          <div class="tcard-name">Ken Newton</div>
+          <div class="tcard-title">European Hotel Portfolio · 27+ Properties</div>
+          <div class="chip-row">
+            <span class="chip" style="background:#FFFBEB;color:#92400E;border:1px solid #FDE68A">Hotel Contracts</span>
+            <span class="chip" style="background:#FFFBEB;color:#92400E;border:1px solid #FDE68A">Allotments</span>
+          </div>
+          <div class="tcard-reports">&#8593; Ajay Kawa</div>
+        </div>
+        <div class="tcard-foot"><span>Field-based · Europe</span><span class="open-lbl">Open 360 &#8599;</span></div>
+      </div>
+      <div class="tcard" onclick="openModal('baris')">
+        <div class="tcard-accent" style="background:#D97706"></div>
+        <div class="tcard-body">
+          <div class="tcard-tag">Turkey &amp; ME Gateway</div>
+          <div class="tcard-name">Baris Intepe</div>
+          <div class="tcard-title">Turkey · Eastern Med · ME Gateway</div>
+          <div class="chip-row">
+            <span class="chip" style="background:#FEF3C7;color:#92400E;border:1px solid #FCD34D">Turkey</span>
+            <span class="chip" style="background:#FEF3C7;color:#92400E;border:1px solid #FCD34D">ME Gateway</span>
+          </div>
+          <div class="tcard-reports">&#8593; Ajay / Manish</div>
+        </div>
+        <div class="tcard-foot"><span>Turkey &amp; Eastern Med</span><span class="open-lbl">Open 360 &#8599;</span></div>
+      </div>
+    </div>
+
     <div class="slbl">European Functions</div>
     <div class="fn-grid" style="margin-bottom:24px">
       <div class="fn"><div class="fn-ico">🚌</div><div class="fn-n">Transport</div><div class="fn-d">96+ vehicle fleet. Adonis. Coach touring &amp; private transfers.</div></div>
@@ -669,34 +738,35 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
       <div class="fn"><div class="fn-ico">⚙️</div><div class="fn-n">GIT Operations</div><div class="fn-d">Group Inclusive Tours. 20:1 ops ratio. Clinton QC.</div></div>
       <div class="fn"><div class="fn-ico">💰</div><div class="fn-n">Finance</div><div class="fn-d">Centralised in UK. UK CFO coordinating European numbers.</div></div>
     </div>
+
     <div class="slbl">ORN Transport Fleet Summary</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px;justify-content:center">
       <div class="ms" style="background:var(--white)">
         <div class="ms-title" style="color:#065F46">🚌 Touring Coach Fleet — 30+ Vehicles</div>
-        <table style="width:100%;border-collapse:collapse;font-size:9px">
-          <tr style="background:#F0FFF4"><th style="padding:4px 6px;text-align:left;font-weight:700;color:#14532D">Vehicle</th><th style="padding:4px;text-align:center;font-weight:700;color:#14532D">Units</th><th style="padding:4px;text-align:center;font-weight:700;color:#14532D">Pax</th><th style="padding:4px;text-align:center;font-weight:700;color:#14532D">Vintage</th></tr>
-          <tr style="border-bottom:1px solid #E5E7EB"><td style="padding:4px 6px;font-weight:700">Higer Scania HD <span style="background:#065F46;color:#fff;font-size:6.5px;padding:1px 4px;border-radius:99px">LEAD</span></td><td style="text-align:center;padding:4px;color:#065F46;font-weight:700">14</td><td style="text-align:center;padding:4px">50</td><td style="text-align:center;padding:4px">2025–26</td></tr>
-          <tr style="border-bottom:1px solid #E5E7EB;background:#F8FAFC"><td style="padding:4px 6px">Neoplan Tourliner</td><td style="text-align:center;padding:4px;color:#065F46;font-weight:700">4</td><td style="text-align:center;padding:4px">49–57</td><td style="text-align:center;padding:4px">2026</td></tr>
-          <tr style="border-bottom:1px solid #E5E7EB"><td style="padding:4px 6px">MB Tourismo RHD</td><td style="text-align:center;padding:4px;color:#065F46;font-weight:700">4</td><td style="text-align:center;padding:4px">19–51</td><td style="text-align:center;padding:4px">2023–25</td></tr>
-          <tr style="border-bottom:1px solid #E5E7EB;background:#F8FAFC"><td style="padding:4px 6px">Temsa 2024</td><td style="text-align:center;padding:4px;color:#065F46;font-weight:700">5</td><td style="text-align:center;padding:4px">50–60</td><td style="text-align:center;padding:4px">2024</td></tr>
-          <tr><td style="padding:4px 6px">MAN Lions Coach L</td><td style="text-align:center;padding:4px;color:#065F46;font-weight:700">3</td><td style="text-align:center;padding:4px">50–51</td><td style="text-align:center;padding:4px">2014–16</td></tr>
+        <table style="width:100%;border-collapse:collapse;font-size:10px">
+          <tr style="background:#F0FFF4"><th style="padding:5px 7px;text-align:left;font-weight:700;color:#14532D">Vehicle</th><th style="padding:5px;text-align:center;font-weight:700;color:#14532D">Units</th><th style="padding:5px;text-align:center;font-weight:700;color:#14532D">Pax</th><th style="padding:5px;text-align:center;font-weight:700;color:#14532D">Vintage</th></tr>
+          <tr style="border-bottom:1px solid #E5E7EB"><td style="padding:5px 7px;font-weight:700">Higer Scania HD <span style="background:#065F46;color:#fff;font-size:7px;padding:1px 5px;border-radius:99px">LEAD</span></td><td style="text-align:center;padding:5px;color:#065F46;font-weight:700">14</td><td style="text-align:center;padding:5px">50</td><td style="text-align:center;padding:5px">2025–26</td></tr>
+          <tr style="border-bottom:1px solid #E5E7EB;background:#F8FAFC"><td style="padding:5px 7px">Neoplan Tourliner</td><td style="text-align:center;padding:5px;color:#065F46;font-weight:700">4</td><td style="text-align:center;padding:5px">49–57</td><td style="text-align:center;padding:5px">2026</td></tr>
+          <tr style="border-bottom:1px solid #E5E7EB"><td style="padding:5px 7px">MB Tourismo RHD</td><td style="text-align:center;padding:5px;color:#065F46;font-weight:700">4</td><td style="text-align:center;padding:5px">19–51</td><td style="text-align:center;padding:5px">2023–25</td></tr>
+          <tr style="border-bottom:1px solid #E5E7EB;background:#F8FAFC"><td style="padding:5px 7px">Temsa 2024</td><td style="text-align:center;padding:5px;color:#065F46;font-weight:700">5</td><td style="text-align:center;padding:5px">50–60</td><td style="text-align:center;padding:5px">2024</td></tr>
+          <tr><td style="padding:5px 7px">MAN Lions Coach L</td><td style="text-align:center;padding:5px;color:#065F46;font-weight:700">3</td><td style="text-align:center;padding:5px">50–51</td><td style="text-align:center;padding:5px">2014–16</td></tr>
         </table>
       </div>
       <div class="ms" style="background:var(--white)">
         <div class="ms-title" style="color:#1E40AF">🚐 Private Transfer Fleet — 65+ Vehicles · MB Only</div>
-        <table style="width:100%;border-collapse:collapse;font-size:9px">
-          <tr style="background:#EFF6FF"><th style="padding:4px 6px;text-align:left;font-weight:700;color:#1E40AF">Vehicle</th><th style="padding:4px;text-align:center;font-weight:700;color:#1E40AF">Units</th><th style="padding:4px;text-align:center;font-weight:700;color:#1E40AF">Pax</th><th style="padding:4px 6px;text-align:left;font-weight:700;color:#1E40AF">Use</th></tr>
-          <tr style="border-bottom:1px solid #E5E7EB"><td style="padding:4px 6px;font-weight:700">V-Klasse Long</td><td style="text-align:center;padding:4px;color:#1E40AF;font-weight:700">35+</td><td style="text-align:center;padding:4px">7</td><td style="padding:4px 6px">FIT · Airport · VIP</td></tr>
-          <tr style="border-bottom:1px solid #E5E7EB;background:#F8FAFC"><td style="padding:4px 6px">V-Klasse Style</td><td style="text-align:center;padding:4px;color:#1E40AF;font-weight:700">5+</td><td style="text-align:center;padding:4px">6</td><td style="padding:4px 6px">VIP · Luxury FIT</td></tr>
-          <tr style="border-bottom:1px solid #E5E7EB"><td style="padding:4px 6px">Vito Tourer</td><td style="text-align:center;padding:4px;color:#1E40AF;font-weight:700">8</td><td style="text-align:center;padding:4px">9</td><td style="padding:4px 6px">Groups · Shuttles</td></tr>
-          <tr><td style="padding:4px 6px">Vito Standard</td><td style="text-align:center;padding:4px;color:#1E40AF;font-weight:700">5+</td><td style="text-align:center;padding:4px">9</td><td style="padding:4px 6px">Transfers · Groups</td></tr>
+        <table style="width:100%;border-collapse:collapse;font-size:10px">
+          <tr style="background:#EFF6FF"><th style="padding:5px 7px;text-align:left;font-weight:700;color:#1E40AF">Vehicle</th><th style="padding:5px;text-align:center;font-weight:700;color:#1E40AF">Units</th><th style="padding:5px;text-align:center;font-weight:700;color:#1E40AF">Pax</th><th style="padding:5px 7px;text-align:left;font-weight:700;color:#1E40AF">Use</th></tr>
+          <tr style="border-bottom:1px solid #E5E7EB"><td style="padding:5px 7px;font-weight:700">V-Klasse Long</td><td style="text-align:center;padding:5px;color:#1E40AF;font-weight:700">35+</td><td style="text-align:center;padding:5px">7</td><td style="padding:5px 7px">FIT · Airport · VIP</td></tr>
+          <tr style="border-bottom:1px solid #E5E7EB;background:#F8FAFC"><td style="padding:5px 7px">V-Klasse Style</td><td style="text-align:center;padding:5px;color:#1E40AF;font-weight:700">5+</td><td style="text-align:center;padding:5px">6</td><td style="padding:5px 7px">VIP · Luxury FIT</td></tr>
+          <tr style="border-bottom:1px solid #E5E7EB"><td style="padding:5px 7px">Vito Tourer</td><td style="text-align:center;padding:5px;color:#1E40AF;font-weight:700">8</td><td style="text-align:center;padding:5px">9</td><td style="padding:5px 7px">Groups · Shuttles</td></tr>
+          <tr><td style="padding:5px 7px">Vito Standard</td><td style="text-align:center;padding:5px;color:#1E40AF;font-weight:700">5+</td><td style="text-align:center;padding:5px">9</td><td style="padding:5px 7px">Transfers · Groups</td></tr>
         </table>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- ════ USA ════════════════════════════════════════════════════════ -->
 <div id="panel-usa" class="tab-panel">
   
   <div class="reg-banner" style="background:#F7F7F5">
@@ -708,12 +778,12 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
   </div>
   <div class="page">
     <div class="slbl">USA Team</div>
-    <div class="team-grid" style="margin-bottom:24px">
+    <div class="team-grid" style="margin-bottom:24px;justify-content:center">
       <div class="tcard" onclick="openModal('kirk')"><div class="tcard-accent" style="background:#B45309"></div><div class="tcard-body"><div class="tcard-tag">CEO USA</div><div class="tcard-name">Kirk Demeter</div><div class="tcard-title">Chief Executive Officer · North America</div><div class="tcard-reports">&#8593; Raj Kumar</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div><div class="tcard" onclick="openModal('kerryn_coo')"><div class="tcard-accent" style="background:#92400E"></div><div class="tcard-body"><div class="tcard-tag">COO USA</div><div class="tcard-name">Kerryn Collins</div><div class="tcard-title">Chief Operating Officer · USA Ops</div><div class="tcard-reports">&#8593; Kirk Demeter</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div><div class="tcard" onclick="openModal('tag')"><div class="tcard-accent" style="background:#C9A84C"></div><div class="tcard-body"><div class="tcard-tag">B2B & Credits</div><div class="tcard-name">Kerryn & Linda</div><div class="tcard-title">TAG · Global B2B</div><div class="tcard-reports">&#8593; Ajay Kawa</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div>
     </div>
 
     <div class="slbl" style="margin-top:24px">Directors &amp; Senior Management</div>
-    <div class="team-grid" style="margin-bottom:16px">
+    <div class="team-grid" style="margin-bottom:16px;justify-content:center">
       <div class="tcard" style="cursor:default">
       <div class="tcard-accent" style="background:#1A73E8"></div>
       <div class="tcard-body">
@@ -781,7 +851,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     </div>
 
     <div class="slbl">Operations, Sales &amp; Marketing</div>
-    <div class="team-grid" style="margin-bottom:16px">
+    <div class="team-grid" style="margin-bottom:16px;justify-content:center">
       <div class="tcard" style="cursor:default">
       <div class="tcard-accent" style="background:#1A73E8"></div>
       <div class="tcard-body">
@@ -867,7 +937,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     </div>
 
     <div class="slbl">Finance</div>
-    <div class="team-grid" style="margin-bottom:16px">
+    <div class="team-grid" style="margin-bottom:16px;justify-content:center">
       <div class="tcard" style="cursor:default">
       <div class="tcard-accent" style="background:#1E40AF"></div>
       <div class="tcard-body">
@@ -930,12 +1000,12 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
   </div>
   <div class="page">
     <div class="slbl">Australia Team</div>
-    <div class="team-grid" style="margin-bottom:24px">
+    <div class="team-grid" style="margin-bottom:24px;justify-content:center">
       <div class="tcard" onclick="openModal('sahil')"><div class="tcard-accent" style="background:#0891B2"></div><div class="tcard-body"><div class="tcard-tag">CEO Australia</div><div class="tcard-name">Sahil Nijhawan</div><div class="tcard-title">CEO · ANZ Region</div><div class="tcard-reports">&#8593; Raj Kumar</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div><div class="tcard" onclick="openModal('yukti')"><div class="tcard-accent" style="background:#0891B2"></div><div class="tcard-body"><div class="tcard-tag">DMC Lead ANZ</div><div class="tcard-name">Yukti Kumar</div><div class="tcard-title">Product & DMC · ANZ</div><div class="tcard-reports">&#8593; Sahil / Ajay</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div>
     </div>
 
     <div class="slbl" style="margin-top:24px">Leadership &amp; Management</div>
-    <div class="team-grid" style="margin-bottom:16px">
+    <div class="team-grid" style="margin-bottom:16px;justify-content:center">
       <div class="tcard" style="cursor:default">
       <div class="tcard-accent" style="background:#1E40AF"></div>
       <div class="tcard-body">
@@ -985,7 +1055,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     </div>
 
     <div class="slbl">Operations Team</div>
-    <div class="team-grid" style="margin-bottom:16px">
+    <div class="team-grid" style="margin-bottom:16px;justify-content:center">
       <div class="tcard" style="cursor:default">
       <div class="tcard-accent" style="background:#065F46"></div>
       <div class="tcard-body">
@@ -1053,7 +1123,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     </div>
 
     <div class="slbl">Sales Support</div>
-    <div class="team-grid" style="margin-bottom:16px">
+    <div class="team-grid" style="margin-bottom:16px;justify-content:center">
       <div class="tcard" style="cursor:default">
       <div class="tcard-accent" style="background:#D97706"></div>
       <div class="tcard-body">
@@ -1085,7 +1155,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     </div>
 
     <div class="slbl">Product Team</div>
-    <div class="team-grid" style="margin-bottom:16px">
+    <div class="team-grid" style="margin-bottom:16px;justify-content:center">
       <div class="tcard" style="cursor:default">
       <div class="tcard-accent" style="background:#0891B2"></div>
       <div class="tcard-body">
@@ -1108,7 +1178,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     </div>
 
     <div class="slbl">Finance</div>
-    <div class="team-grid" style="margin-bottom:16px">
+    <div class="team-grid" style="margin-bottom:16px;justify-content:center">
       <div class="tcard" style="cursor:default">
       <div class="tcard-accent" style="background:#1E40AF"></div>
       <div class="tcard-body">
@@ -1151,7 +1221,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
   </div>
   <div class="page">
     <div class="slbl">Middle East Team</div>
-    <div class="team-grid" style="margin-bottom:24px">
+    <div class="team-grid" style="margin-bottom:24px;justify-content:center">
       <div class="tcard tbc-card" onclick="openModal('me_ceo')"><div class="tcard-accent" style="background:#D97706"></div><div class="tcard-body"><div class="tcard-tag">CEO Middle East · TBC</div><div class="tcard-name">TBC</div><div class="tcard-title">GCC & MENA</div><div class="tcard-reports">&#8593; Raj Kumar</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div><div class="tcard" onclick="openModal('baris')"><div class="tcard-accent" style="background:#D97706"></div><div class="tcard-body"><div class="tcard-tag">Turkey & ME Gateway</div><div class="tcard-name">Baris Intepe</div><div class="tcard-title">Turkey · Eastern Med · ME Gateway</div><div class="tcard-reports">&#8593; Ajay / Manish</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div>
     </div>
     <div class="tbd-card" style="margin-bottom:24px">
@@ -1184,7 +1254,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     <div class="slbl">Business Sources &amp; Sales Channels</div>
     <div style="background:var(--off);border-radius:10px;border:1.5px solid var(--border);padding:18px 20px;margin-bottom:10px">
       <div style="font-size:10px;color:var(--mid);line-height:1.65;margin-bottom:14px">How ORN reaches and sells to customers — B2C direct, B2B agents and cruise. Each channel has its own platform and brand.</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;justify-content:center">
 
         <div style="background:#fff;border-radius:9px;border:1.5px solid var(--border);border-left:4px solid #7C3AED;padding:16px">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
@@ -1247,7 +1317,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     <div class="slbl" style="margin-top:20px">Operational Systems</div>
     <div style="background:var(--off);border-radius:10px;border:1.5px solid var(--border);padding:18px 20px;margin-bottom:10px">
       <div style="font-size:10px;color:var(--mid);line-height:1.65;margin-bottom:14px">The systems that run the day-to-day commercial operation — CRM, bookings, product distribution and office connectivity across all five regions.</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;justify-content:center">
 
         <div style="background:#fff;border-radius:9px;border:1.5px solid var(--border);border-left:4px solid #E8442C;padding:16px">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
@@ -1321,7 +1391,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
           </div>
           <span style="font-size:8px;font-weight:700;padding:3px 10px;border-radius:99px;background:#D1FAE5;color:#065F46;border:1px solid #6EE7B7">Active</span>
         </div>
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px">
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;justify-content:center">
           <div style="background:var(--off);border-radius:7px;padding:10px 12px">
             <div style="font-size:10px;font-weight:700;color:var(--text);margin-bottom:3px">📊 Financial Reporting</div>
             <div style="font-size:8.5px;color:var(--mid)">Monthly P&amp;L, management accounts and consolidated group reporting to UK CFO</div>
@@ -1341,7 +1411,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
         </div>
       </div>
 
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;justify-content:center">
         <div style="background:#fff;border-radius:9px;border:1.5px solid var(--border);border-left:4px solid #374151;padding:14px">
           <div style="font-size:10px;font-weight:800;color:var(--text);margin-bottom:6px">📋 Compliance &amp; Audit</div>
           <div style="font-size:9px;color:var(--mid);line-height:1.6">All five regions maintain audit-ready books at all times. UK operates under UK GAAP. USA under US GAAP. Australia under AASB. UK CFO ensures cross-region compliance standards are met and that all books are ready for annual external audit.</div>
@@ -1366,7 +1436,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
   </div>
   <div style="max-width:1100px;margin:0 auto;padding:28px 32px">
     <div style="background:#fff;border-radius:10px;border:1.5px solid var(--border);overflow:hidden">
-      <div style="background:var(--blk);padding:10px 12px;display:grid;grid-template-columns:2fr 1fr 1fr auto">
+      <div style="background:var(--blk);padding:10px 12px;display:grid;grid-template-columns:2fr 1fr 1fr auto;justify-content:center">
         <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#888;padding:0 12px">Name &amp; Role</div>
         <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#888;padding:0 12px">Region</div>
         <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#888;padding:0 12px">JD Status</div>
