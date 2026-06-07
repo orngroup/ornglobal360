@@ -32,7 +32,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 /* BANNER */
 .banner{padding:26px 36px 22px;border-bottom:1px solid var(--border)}
 .banner-kicker{font-size:8px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
-.banner-h{font-size:20px;font-weight:800;color:var(--blk);margin-bottom:5px;line-height:1.25}
+.banner-h{font-size:20px;font-weight:800;color:var(--blk);margin-bottom:5px;line-height:1.25;text-align:center}
 .banner-body{font-size:10px;color:var(--mid);line-height:1.7;max-width:700px}
 
 /* PAGE */
@@ -51,12 +51,12 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 .oc.dr{background:var(--white);border-color:var(--border);color:var(--text);min-width:145px}
 .oc-tag{font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;margin-bottom:3px}
 .oc-name{font-size:14px;font-weight:800;margin-bottom:1px;line-height:1.2}
-.oc-title{font-size:9px;line-height:1.4;margin-bottom:5px}
+.oc-title{font-size:9px;line-height:1.4;margin-bottom:5px;color:inherit}
 .oc-rep{font-size:7.5px;padding-top:5px;border-top:1px solid rgba(0,0,0,.08)}
-.oc.ceo .oc-rep{border-top-color:rgba(255,255,255,.12);color:rgba(255,255,255,.55)}
+.oc.ceo .oc-rep{border-top-color:rgba(255,255,255,.12);color:#fff}
 
 /* 360 CARDS */
-.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:9px}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:9px;justify-items:stretch}
 .tcard{background:var(--white);border:1.5px solid var(--border);border-radius:10px;overflow:hidden;cursor:pointer;transition:all .15s}
 .tcard:hover{border-color:#999;box-shadow:0 4px 16px rgba(0,0,0,.07);transform:translateY(-1px)}
 .tcard-accent{height:3px}
@@ -75,7 +75,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
 .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;margin:5px 0}
 .stat-box{border-radius:4px;padding:4px;text-align:center}
 .stat-n{font-size:11px;font-weight:800;color:#fff}
-.stat-l{font-size:6px;color:rgba(255,255,255,.8);text-transform:uppercase;letter-spacing:.06em}
+.stat-l{font-size:6px;color:#f0f0f0;text-transform:uppercase;letter-spacing:.06em}
 
 /* INFO PANELS */
 .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px}
@@ -180,7 +180,7 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     <div style="display:flex;justify-content:center;gap:10px;margin-bottom:0">
       <!-- Global COO role -->
       <div class="oc ceo" style="min-width:240px">
-        <div class="oc-tag" style="color:rgba(255,255,255,.45);font-size:8px;letter-spacing:.14em">ROLE 1</div>
+        <div class="oc-tag" style="color:#ddd;font-size:8px;letter-spacing:.14em">ROLE 1</div>
         <div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--gold2);margin-bottom:4px">Global COO</div>
         <div class="oc-name" style="font-size:16px">Raj Kumar</div>
         <div class="oc-title" style="color:#9aa8b5">Chief Operating Officer · All Regions</div>
@@ -190,10 +190,10 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
       <div style="width:1px;background:rgba(255,255,255,.15);align-self:stretch;margin:8px 0"></div>
       <!-- CEO UK/Europe/USA role -->
       <div class="oc ceo" style="min-width:240px;border-color:rgba(201,168,76,.4)">
-        <div class="oc-tag" style="color:rgba(255,255,255,.45);font-size:8px;letter-spacing:.14em">ROLE 2</div>
+        <div class="oc-tag" style="color:#ddd;font-size:8px;letter-spacing:.14em">ROLE 2</div>
         <div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--gold2);margin-bottom:4px">CEO — UK, Europe, USA, Australia &amp; Middle East, Australia &amp; Middle East</div>
         <div class="oc-name" style="font-size:16px">Raj Kumar</div>
-        <div class="oc-title" style="color:#9aa8b5">Commercial Division · 17 Hanover Square, London</div>
+        <div class="oc-title" style="color:#fff">Commercial Division · 17 Hanover Square, London</div>
         <div class="oc-rep">Reports to: TBC</div>
       </div>
     </div>
@@ -400,27 +400,27 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:var(--gold);border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global COO &amp; CEO</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:2px">Global COO &amp; CEO</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Raj Kumar</div>
-        <div style="font-size:8px;color:rgba(255,255,255,.55)">UK · Europe · USA · All Regions</div>
+        <div style="font-size:8px;color:#ddd">UK · Europe · USA · All Regions</div>
       </div>
     </div>
     <div style="width:1px;height:36px;background:rgba(255,255,255,.1)"></div>
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:var(--gold);border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">COO — UK &amp; Europe</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:2px">COO — UK &amp; Europe</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Ajay Kawa</div>
-        <div style="font-size:8px;color:rgba(255,255,255,.55)">UK &amp; Europe Operations</div>
+        <div style="font-size:8px;color:#ddd">UK &amp; Europe Operations</div>
       </div>
     </div>
     <div style="width:1px;height:36px;background:rgba(255,255,255,.1)"></div>
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:#15803D;border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global CPO</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:2px">Global CPO</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Alia Taub</div>
-        <div style="font-size:8px;color:rgba(255,255,255,.55)">People · Training · BD · Global</div>
+        <div style="font-size:8px;color:#ddd">People · Training · BD · Global</div>
       </div>
     </div>
   </div>
@@ -432,28 +432,207 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     </div>
   </div>
   <div class="page">
-    <div class="slbl">UK Leadership &amp; Team</div>
-    <div class="team-grid" style="margin-bottom:24px">
-      <div class="tcard" onclick="openModal('ajay')"><div class="tcard-accent" style="background:#111"></div><div class="tcard-body"><div class="tcard-tag">COO UK & Europe</div><div class="tcard-name">Ajay Kawa</div><div class="tcard-title">Chief Operating Officer</div><div class="tcard-reports">&#8593; Raj Kumar</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div><div class="tcard" onclick="openModal('ken')"><div class="tcard-accent" style="background:#C9A84C"></div><div class="tcard-body"><div class="tcard-tag">Contracts Manager</div><div class="tcard-name">Ken Newton</div><div class="tcard-title">Hotel & Supplier Contracting · Europe</div><div class="chip-row"><span class="chip" style="background:#FFFBEB;color:#92400E;border:1px solid #FDE68A">Hotel Contracts</span><span class="chip" style="background:#FFFBEB;color:#92400E;border:1px solid #FDE68A">Allotments</span></div><div class="tcard-reports">&#8593; Ajay Kawa</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div><div class="tcard" onclick="openModal('clinton')"><div class="tcard-accent" style="background:#1D4ED8"></div><div class="tcard-body"><div class="tcard-tag">GIT Quality Control</div><div class="tcard-name">Clinton Thomas</div><div class="tcard-title">GIT QC Manager · Pre-Departure · Incoming Tours</div><div class="chip-row"><span class="chip" style="background:#EFF6FF;color:#1D4ED8;border:1px solid #BFDBFE">QC Sign-Off</span><span class="chip" style="background:#EFF6FF;color:#1D4ED8;border:1px solid #BFDBFE">T-7 Gate</span></div><div class="tcard-reports">&#8593; Ajay Kawa</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div><div class="tcard" onclick="openModal('david')"><div class="tcard-accent" style="background:#1A73E8"></div><div class="tcard-body"><div class="tcard-tag">Air & Transport</div><div class="tcard-name">David Tan</div><div class="tcard-title">Group Flights · ORN Transport Integration</div><div class="tcard-reports">&#8593; Ajay Kawa</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div><div class="tcard" onclick="openModal('manish')"><div class="tcard-accent" style="background:#7C3AED"></div><div class="tcard-body"><div class="tcard-tag">Global DMC</div><div class="tcard-name">Manish Suchde</div><div class="tcard-title">Global Partnerships · Cathay · Macau</div><div class="tcard-reports">&#8593; Ajay Kawa</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div><div class="tcard" onclick="openModal('tag')"><div class="tcard-accent" style="background:#C9A84C"></div><div class="tcard-body"><div class="tcard-tag">B2B & Credits</div><div class="tcard-name">Kerryn & Linda</div><div class="tcard-title">Travel Answers Group · Global B2B</div><div class="tcard-reports">&#8593; Ajay Kawa</div></div><div class="tcard-foot"><span>Open 360 &#8599;</span></div></div>
+
+    <!-- Leadership -->
+    <div class="slbl">UK Leadership</div>
+    <div style="margin-bottom:24px">
+      <div class="team-grid" style="grid-template-columns:repeat(auto-fill,minmax(220px,1fr))">
+        <div class="tcard" onclick="openModal('ajay')">
+          <div class="tcard-accent" style="background:#111"></div>
+          <div class="tcard-body">
+            <div class="tcard-tag">COO — UK &amp; Europe</div>
+            <div class="tcard-name">Ajay Kawa</div>
+            <div class="tcard-title">Chief Operating Officer · UK &amp; Europe · All Commercial Authority</div>
+            <div class="chip-row">
+              <span class="chip" style="background:#F4F5F7;color:#444;border:1px solid #E2E2DE">London HQ</span>
+              <span class="chip" style="background:#F4F5F7;color:#444;border:1px solid #E2E2DE">Reports to Raj Kumar</span>
+            </div>
+            <div class="tcard-reports">↑ Raj Kumar (Global COO/CEO)</div>
+          </div>
+          <div class="tcard-foot"><span>17 Hanover Square</span><span class="open-lbl">Open 360 ↗</span></div>
+        </div>
+      </div>
     </div>
+
+    <!-- UK Commercial Team -->
+    <div class="slbl">UK Commercial Team</div>
+    <div class="team-grid" style="margin-bottom:24px">
+      <div class="tcard" onclick="openModal('ken')">
+        <div class="tcard-accent" style="background:#C9A84C"></div>
+        <div class="tcard-body">
+          <div class="tcard-tag">Contracts Manager · UK &amp; Europe</div>
+          <div class="tcard-name">Ken Newton</div>
+          <div class="tcard-title">Hotel &amp; Supplier Contracting · European Portfolio</div>
+          <div class="chip-row">
+            <span class="chip" style="background:#FFFBEB;color:#92400E;border:1px solid #FDE68A">Hotel Contracts</span>
+            <span class="chip" style="background:#FFFBEB;color:#92400E;border:1px solid #FDE68A">Allotments</span>
+          </div>
+          <div class="tcard-reports">↑ Ajay Kawa</div>
+        </div>
+        <div class="tcard-foot"><span>Field-based · Europe</span><span class="open-lbl">Open 360 ↗</span></div>
+      </div>
+      <div class="tcard" onclick="openModal('clinton')">
+        <div class="tcard-accent" style="background:#1D4ED8"></div>
+        <div class="tcard-body">
+          <div class="tcard-tag">GIT Quality Control</div>
+          <div class="tcard-name">Clinton Thomas</div>
+          <div class="tcard-title">GIT QC Manager · Pre-Departure · Incoming Tours</div>
+          <div class="chip-row">
+            <span class="chip" style="background:#EFF6FF;color:#1D4ED8;border:1px solid #BFDBFE">QC Sign-Off</span>
+            <span class="chip" style="background:#EFF6FF;color:#1D4ED8;border:1px solid #BFDBFE">T-7 Gate</span>
+          </div>
+          <div class="tcard-reports">↑ Ajay Kawa</div>
+        </div>
+        <div class="tcard-foot"><span>UK · Incoming Tours &amp; QC</span><span class="open-lbl">Open 360 ↗</span></div>
+      </div>
+      <div class="tcard" onclick="openModal('david')">
+        <div class="tcard-accent" style="background:#1A73E8"></div>
+        <div class="tcard-body">
+          <div class="tcard-tag">Head — Air &amp; Transport</div>
+          <div class="tcard-name">David Tan</div>
+          <div class="tcard-title">Air Product · Group Flights · Transport Integration</div>
+          <div class="chip-row">
+            <span class="chip" style="background:#EFF6FF;color:#1A73E8;border:1px solid #BFDBFE">Group Air</span>
+            <span class="chip" style="background:#EFF6FF;color:#1A73E8;border:1px solid #BFDBFE">Cathay Pacific</span>
+          </div>
+          <div class="tcard-reports">↑ Ajay Kawa</div>
+        </div>
+        <div class="tcard-foot"><span>Global</span><span class="open-lbl">Open 360 ↗</span></div>
+      </div>
+      <div class="tcard" onclick="openModal('manish')">
+        <div class="tcard-accent" style="background:#7C3AED"></div>
+        <div class="tcard-body">
+          <div class="tcard-tag">Global Partnerships &amp; DMC</div>
+          <div class="tcard-name">Manish Suchde</div>
+          <div class="tcard-title">Global DMC · Nexus · Cathay Pacific · Macau</div>
+          <div class="chip-row">
+            <span class="chip" style="background:#F5F3FF;color:#6D28D9;border:1px solid #DDD6FE">DMC Network</span>
+            <span class="chip" style="background:#F5F3FF;color:#6D28D9;border:1px solid #DDD6FE">Kerzner</span>
+          </div>
+          <div class="tcard-reports">↑ Ajay Kawa</div>
+        </div>
+        <div class="tcard-foot"><span>Global</span><span class="open-lbl">Open 360 ↗</span></div>
+      </div>
+    </div>
+
+    <!-- UK Central Functions -->
+    <div class="slbl">UK DMO — Central Functions</div>
+    <div class="team-grid" style="margin-bottom:24px">
+      <div class="tcard" style="cursor:default">
+        <div class="tcard-accent" style="background:#1A73E8"></div>
+        <div class="tcard-body">
+          <div class="tcard-tag">Central Function</div>
+          <div class="tcard-name">Administrator</div>
+          <div class="tcard-title">Office management · Diary &amp; correspondence · 17 Hanover Square</div>
+          <div class="tcard-reports">↑ Ajay Kawa / Ken Newton</div>
+        </div>
+        <div class="tcard-foot" style="color:#aaa"><span>London HQ</span><span style="font-size:8px;font-style:italic">JD to be confirmed</span></div>
+      </div>
+      <div class="tcard" style="cursor:default">
+        <div class="tcard-accent" style="background:#2BAD4E"></div>
+        <div class="tcard-body">
+          <div class="tcard-tag">Central Function</div>
+          <div class="tcard-name">Contract Processing</div>
+          <div class="tcard-title">Rate loading · System accuracy · India team coordination</div>
+          <div class="tcard-reports">↑ Ken Newton</div>
+        </div>
+        <div class="tcard-foot" style="color:#aaa"><span>London / Remote</span><span style="font-size:8px;font-style:italic">JD to be confirmed</span></div>
+      </div>
+    </div>
+
+    <!-- Skyjet / Cruise Division -->
+    <div class="slbl">Skyjet → ORN Cruise Division</div>
+    <div style="background:var(--off);border-radius:10px;border:1.5px solid var(--border);border-top:3px solid var(--gold);padding:18px 20px;margin-bottom:16px">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+        <div style="font-size:22px">✈️</div>
+        <div>
+          <div style="font-size:13px;font-weight:800;color:var(--text)">Skyjet → ORN Cruise Division</div>
+          <div style="font-size:9.5px;color:var(--mid)">UK-based operation · All bookings through 17 Hanover Square · Programme Owner: Alia Taub</div>
+        </div>
+      </div>
+      <div class="team-grid">
+        <div class="tcard" style="cursor:default">
+          <div class="tcard-accent" style="background:var(--gold)"></div>
+          <div class="tcard-body">
+            <div class="tcard-tag">Cruise Division</div>
+            <div class="tcard-name" style="color:#D97706">Cruise Manager</div>
+            <div class="tcard-title">Overall management of the cruise division operation · UK-based</div>
+            <div class="tcard-reports">↑ Ajay Kawa</div>
+          </div>
+          <div class="tcard-foot" style="color:#aaa"><span>UK · TBC</span><span style="font-size:8px;font-style:italic">Awaiting hire</span></div>
+        </div>
+        <div class="tcard" style="cursor:default">
+          <div class="tcard-accent" style="background:#1A73E8"></div>
+          <div class="tcard-body">
+            <div class="tcard-tag">Cruise Division</div>
+            <div class="tcard-name" style="color:#1A73E8">Reservations Manager</div>
+            <div class="tcard-title">Cruise bookings, amendments &amp; client reservations · UK</div>
+            <div class="tcard-reports">↑ Cruise Manager</div>
+          </div>
+          <div class="tcard-foot" style="color:#aaa"><span>UK · TBC</span><span style="font-size:8px;font-style:italic">Awaiting hire</span></div>
+        </div>
+        <div class="tcard" style="cursor:default">
+          <div class="tcard-accent" style="background:#1A73E8"></div>
+          <div class="tcard-body">
+            <div class="tcard-tag">Cruise Division</div>
+            <div class="tcard-name" style="color:#1A73E8">Reservations Agent × 2</div>
+            <div class="tcard-title">Cruise booking processing · Client communication · Amendments</div>
+            <div class="tcard-reports">↑ Reservations Manager</div>
+          </div>
+          <div class="tcard-foot" style="color:#aaa"><span>UK · TBC</span><span style="font-size:8px;font-style:italic">Awaiting hire</span></div>
+        </div>
+        <div class="tcard" style="cursor:default">
+          <div class="tcard-accent" style="background:#7C3AED"></div>
+          <div class="tcard-body">
+            <div class="tcard-tag">Cruise Division</div>
+            <div class="tcard-name" style="color:#7C3AED">Product Manager — Cruise</div>
+            <div class="tcard-title">Cruise product sourcing · Itinerary development · Cruise line relationships</div>
+            <div class="tcard-reports">↑ Cruise Manager</div>
+          </div>
+          <div class="tcard-foot" style="color:#aaa"><span>UK · TBC</span><span style="font-size:8px;font-style:italic">Awaiting hire</span></div>
+        </div>
+        <div class="tcard" style="cursor:default">
+          <div class="tcard-accent" style="background:#065F46"></div>
+          <div class="tcard-body">
+            <div class="tcard-tag">Cruise Division</div>
+            <div class="tcard-name" style="color:#065F46">Operations Coordinator</div>
+            <div class="tcard-title">Pre-departure ops · Port transfers · Shore excursion coordination</div>
+            <div class="tcard-reports">↑ Cruise Manager</div>
+          </div>
+          <div class="tcard-foot" style="color:#aaa"><span>UK · TBC</span><span style="font-size:8px;font-style:italic">Awaiting hire</span></div>
+        </div>
+        <div class="tcard" style="cursor:default">
+          <div class="tcard-accent" style="background:#374151"></div>
+          <div class="tcard-body">
+            <div class="tcard-tag">Cruise Division</div>
+            <div class="tcard-name" style="color:#374151">Administrator — Cruise</div>
+            <div class="tcard-title">Division admin · Document management · Supplier correspondence</div>
+            <div class="tcard-reports">↑ Cruise Manager</div>
+          </div>
+          <div class="tcard-foot" style="color:#aaa"><span>UK · TBC</span><span style="font-size:8px;font-style:italic">Awaiting hire</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UK Functions -->
     <div class="slbl">UK Functions</div>
     <div class="fn-grid" style="margin-bottom:24px">
-      <div class="fn new"><div class="fn-ico">🚢</div><div class="fn-n">Cruise Division</div><div class="fn-d">Bookings handled through UK. Product global.</div></div>
+      <div class="fn new"><div class="fn-ico">🚢</div><div class="fn-n">Cruise Division</div><div class="fn-d">Bookings → UK. Product global. Skyjet transition.</div></div>
       <div class="fn"><div class="fn-ico">📦</div><div class="fn-n">Product &amp; Contracting</div><div class="fn-d">Hotel, transport, experience. Global contracting.</div></div>
       <div class="fn"><div class="fn-ico">✅</div><div class="fn-n">GIT Quality Control</div><div class="fn-d">Pre-departure gates. T-30/T-14/T-7. Sign-off.</div></div>
       <div class="fn"><div class="fn-ico">📋</div><div class="fn-n">Contract Processing</div><div class="fn-d">Rate loading, system accuracy, India coordination.</div></div>
       <div class="fn"><div class="fn-ico">🏛️</div><div class="fn-n">Administration</div><div class="fn-d">Diary, correspondence, office ops · London HQ.</div></div>
-      <div class="fn"><div class="fn-ico">💰</div><div class="fn-n">Finance Hub</div><div class="fn-d">Centralised for Europe. UK CFO coordinating. TBD.</div></div>
+      <div class="fn"><div class="fn-ico">💰</div><div class="fn-n">Finance Hub</div><div class="fn-d">Centralised for Europe. UK CFO coordinating.</div></div>
     </div>
     <div class="slbl">Key Partners — UK</div>
-    <div class="info-grid">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px">
       <div class="info-card"><div class="info-title">Europe Incoming</div><div class="info-body">Primary European DMC partner. Eileen Corrales as GM Contracting. Managed by Ken Newton. 27 hotel properties across Scotland, England, Wales.</div></div>
-      <div class="info-card"><div class="info-title">TAG — Travel Answers Group</div><div class="info-body">B2B agent network and credits programme. Kerryn &amp; Linda. Global B2B interface with UK as primary contact.</div></div>
+      <div class="info-card"><div class="info-title">TAG — Travel Answers Group</div><div class="info-body">B2B agent network and credits programme. Kerryn &amp; Linda. Global B2B interface with UK as primary commercial contact.</div></div>
     </div>
+
   </div>
 </div>
 
-<!-- ════ EUROPE ════════════════════════════════════════════════════ -->
 <div id="panel-europe" class="tab-panel">
   
   <!-- C-Suite Banner -->
@@ -461,27 +640,27 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:var(--gold);border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global COO &amp; CEO</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:2px">Global COO &amp; CEO</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Raj Kumar</div>
-        <div style="font-size:8px;color:rgba(255,255,255,.55)">UK · Europe · USA · All Regions</div>
+        <div style="font-size:8px;color:#ddd">UK · Europe · USA · All Regions</div>
       </div>
     </div>
     <div style="width:1px;height:36px;background:rgba(255,255,255,.1)"></div>
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:var(--gold);border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">COO — UK &amp; Europe</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:2px">COO — UK &amp; Europe</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Ajay Kawa</div>
-        <div style="font-size:8px;color:rgba(255,255,255,.55)">UK &amp; Europe Operations</div>
+        <div style="font-size:8px;color:#ddd">UK &amp; Europe Operations</div>
       </div>
     </div>
     <div style="width:1px;height:36px;background:rgba(255,255,255,.1)"></div>
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:#15803D;border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global CPO</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:2px">Global CPO</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Alia Taub</div>
-        <div style="font-size:8px;color:rgba(255,255,255,.55)">People · Training · BD · Global</div>
+        <div style="font-size:8px;color:#ddd">People · Training · BD · Global</div>
       </div>
     </div>
   </div>
@@ -540,27 +719,27 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:var(--gold);border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global COO &amp; CEO</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:2px">Global COO &amp; CEO</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Raj Kumar</div>
-        <div style="font-size:8px;color:rgba(255,255,255,.55)">UK · Europe · USA · All Regions</div>
+        <div style="font-size:8px;color:#ddd">UK · Europe · USA · All Regions</div>
       </div>
     </div>
     <div style="width:1px;height:36px;background:rgba(255,255,255,.1)"></div>
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:var(--gold);border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">COO — UK &amp; Europe</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:2px">COO — UK &amp; Europe</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Ajay Kawa</div>
-        <div style="font-size:8px;color:rgba(255,255,255,.55)">UK &amp; Europe Operations</div>
+        <div style="font-size:8px;color:#ddd">UK &amp; Europe Operations</div>
       </div>
     </div>
     <div style="width:1px;height:36px;background:rgba(255,255,255,.1)"></div>
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:#15803D;border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global CPO</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:2px">Global CPO</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Alia Taub</div>
-        <div style="font-size:8px;color:rgba(255,255,255,.55)">People · Training · BD · Global</div>
+        <div style="font-size:8px;color:#ddd">People · Training · BD · Global</div>
       </div>
     </div>
   </div>
@@ -791,27 +970,27 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:var(--gold);border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global COO &amp; CEO</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:2px">Global COO &amp; CEO</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Raj Kumar</div>
-        <div style="font-size:8px;color:rgba(255,255,255,.55)">UK · Europe · USA · All Regions</div>
+        <div style="font-size:8px;color:#ddd">UK · Europe · USA · All Regions</div>
       </div>
     </div>
     <div style="width:1px;height:36px;background:rgba(255,255,255,.1)"></div>
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:var(--gold);border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">COO — UK &amp; Europe</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:2px">COO — UK &amp; Europe</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Ajay Kawa</div>
-        <div style="font-size:8px;color:rgba(255,255,255,.55)">UK &amp; Europe Operations</div>
+        <div style="font-size:8px;color:#ddd">UK &amp; Europe Operations</div>
       </div>
     </div>
     <div style="width:1px;height:36px;background:rgba(255,255,255,.1)"></div>
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:#15803D;border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global CPO</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:2px">Global CPO</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Alia Taub</div>
-        <div style="font-size:8px;color:rgba(255,255,255,.55)">People · Training · BD · Global</div>
+        <div style="font-size:8px;color:#ddd">People · Training · BD · Global</div>
       </div>
     </div>
   </div>
@@ -1041,27 +1220,27 @@ body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--white);color:va
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:var(--gold);border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global COO &amp; CEO</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:2px">Global COO &amp; CEO</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Raj Kumar</div>
-        <div style="font-size:8px;color:rgba(255,255,255,.55)">UK · Europe · USA · All Regions</div>
+        <div style="font-size:8px;color:#ddd">UK · Europe · USA · All Regions</div>
       </div>
     </div>
     <div style="width:1px;height:36px;background:rgba(255,255,255,.1)"></div>
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:var(--gold);border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">COO — UK &amp; Europe</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:2px">COO — UK &amp; Europe</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Ajay Kawa</div>
-        <div style="font-size:8px;color:rgba(255,255,255,.55)">UK &amp; Europe Operations</div>
+        <div style="font-size:8px;color:#ddd">UK &amp; Europe Operations</div>
       </div>
     </div>
     <div style="width:1px;height:36px;background:rgba(255,255,255,.1)"></div>
     <div style="display:flex;align-items:center;gap:8px">
       <div style="width:3px;height:36px;background:#15803D;border-radius:99px;flex-shrink:0"></div>
       <div>
-        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.5);margin-bottom:2px">Global CPO</div>
+        <div style="font-size:7px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:2px">Global CPO</div>
         <div style="font-size:13px;font-weight:800;color:#fff">Alia Taub</div>
-        <div style="font-size:8px;color:rgba(255,255,255,.55)">People · Training · BD · Global</div>
+        <div style="font-size:8px;color:#ddd">People · Training · BD · Global</div>
       </div>
     </div>
   </div>
